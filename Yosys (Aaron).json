@@ -1,0 +1,4725 @@
+{
+    "schema_version": 2,
+    "oldId": "-MSTmAtz8dyPwLV_v8Dp",
+    "name": "Yosys (Aaron)",
+    "avatar": "https://s3.amazonaws.com/files.d20.io/images/200083187/1PiPJQNDAtaqmIJS6dcKIQ/med.png?1613018274",
+    "bio": "",
+    "gmnotes": "",
+    "defaulttoken": "",
+    "tags": "[]",
+    "controlledby": "all",
+    "inplayerjournals": "all",
+    "attribs": [
+        {
+            "name": "hitdieroll",
+            "current": "8",
+            "max": "",
+            "id": "-MSTmwla515iLVytfNuO"
+        },
+        {
+            "name": "showleveler",
+            "current": 0,
+            "max": "",
+            "id": "-MSTmwle0ss2BU1ILral"
+        },
+        {
+            "name": "invalidXP",
+            "current": 0,
+            "max": "",
+            "id": "-MSTmwlhu3DJWFGj5qmq"
+        },
+        {
+            "name": "version",
+            "current": 4.21,
+            "max": "",
+            "id": "-MSTmwlmCbeoRxXhDeXW"
+        },
+        {
+            "name": "appliedUpdates",
+            "current": "upgrade_to_4_2_1,fix_spell_attacks,fix_pc_skill_and_saving_rolls,fix_pc_saving_rolls,fix_pc_skill_and_saving_rolls_with_expertise,fix_pc_skill_and_saving_rolls_with_reliable_talent,enable_powerful_build_on_existing_characters,fix_pc_global_critical_damage_rolls,fix_pc_global_critical_stacked_damage_rolls,fix_pc_skill_rolls_tooltips,fix_pc_global_statical_critical_damage,fix_spell_school_ouput,fix_pc_global_multiple_statical_critical_damage,fix_spell_savedc_output,fix_spellpoints,fix_advantage_query",
+            "max": "",
+            "id": "-MSTmwloCNpGQqBk7Fjo"
+        },
+        {
+            "name": "strength_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{strength-save-u}}} {{mod=@{strength_save_bonus}}} {{r1=[[@{d20}+@{strength_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{strength_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwlw3zPPCB7IF2ks"
+        },
+        {
+            "name": "dexterity_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{dexterity-save-u}}} {{mod=@{dexterity_save_bonus}}} {{r1=[[@{d20}+@{dexterity_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{dexterity_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwlyEg98hWjwR67G"
+        },
+        {
+            "name": "constitution_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{constitution-save-u}}} {{mod=@{constitution_save_bonus}}} {{r1=[[@{d20}+@{constitution_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{constitution_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwm-KGx3Zr9igAJe"
+        },
+        {
+            "name": "intelligence_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{intelligence-save-u}}} {{mod=@{intelligence_save_bonus}}} {{r1=[[@{d20}+@{intelligence_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{intelligence_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwm1wgu4acKOxuIL"
+        },
+        {
+            "name": "wisdom_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{wisdom-save-u}}} {{mod=@{wisdom_save_bonus}}} {{r1=[[@{d20}+@{wisdom_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{wisdom_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwm3ZgoLZoqVVy3z"
+        },
+        {
+            "name": "charisma_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{charisma-save-u}}} {{mod=@{charisma_save_bonus}}} {{r1=[[@{d20}+@{charisma_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{charisma_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwm4QCGFDdkcl38M"
+        },
+        {
+            "name": "honor_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{honor-save-u}}} {{mod=@{honor_save_bonus}}} {{r1=[[@{d20}+@{honor_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{honor_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwm6op3gA8UAnBwB"
+        },
+        {
+            "name": "sanity_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{sanity-save-u}}} {{mod=@{sanity_save_bonus}}} {{r1=[[@{d20}+@{sanity_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{sanity_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwm7VACRQunDAzP2"
+        },
+        {
+            "name": "athletics_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{athletics-u}}} {{mod=@{athletics_bonus}}} {{r1=[[@{d20}+-2[strength]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+-2[strength]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwm922-ehcqZ1Bbs"
+        },
+        {
+            "name": "acrobatics_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{acrobatics-u}}} {{mod=@{acrobatics_bonus}}} {{r1=[[@{d20}+3[dexterity]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+3[dexterity]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmBBbm-a2mfu2mY"
+        },
+        {
+            "name": "sleight_of_hand_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{sleight_of_hand-u}}} {{mod=@{sleight_of_hand_bonus}}} {{r1=[[@{d20}+3[dexterity]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+3[dexterity]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmCQrQjie_UzMIL"
+        },
+        {
+            "name": "stealth_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{stealth-u}}} {{mod=@{stealth_bonus}}} {{r1=[[@{d20}+3[dexterity]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+3[dexterity]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmE5RwYcPnRjafY"
+        },
+        {
+            "name": "arcana_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{arcana-u}}} {{mod=@{arcana_bonus}}} {{r1=[[@{d20}+2[Proficiency]+5[intelligence]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+2[Proficiency]+5[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmFyUMK-PPx6WBY"
+        },
+        {
+            "name": "history_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{history-u}}} {{mod=@{history_bonus}}} {{r1=[[@{d20}+2[Proficiency]+5[intelligence]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+2[Proficiency]+5[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmGKQRba8XJzkJP"
+        },
+        {
+            "name": "investigation_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{investigation-u}}} {{mod=@{investigation_bonus}}} {{r1=[[@{d20}+5[intelligence]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+5[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmI4svwca2RTmNQ"
+        },
+        {
+            "name": "nature_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{nature-u}}} {{mod=@{nature_bonus}}} {{r1=[[@{d20}+5[intelligence]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+5[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmJyotYb9NcvvON"
+        },
+        {
+            "name": "religion_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{religion-u}}} {{mod=@{religion_bonus}}} {{r1=[[@{d20}+2[Proficiency]+5[intelligence]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+2[Proficiency]+5[intelligence]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmLnhU974lH9tUJ"
+        },
+        {
+            "name": "animal_handling_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{animal_handling-u}}} {{mod=@{animal_handling_bonus}}} {{r1=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmQXKtj8taQ03-a"
+        },
+        {
+            "name": "insight_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{insight-u}}} {{mod=@{insight_bonus}}} {{r1=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmR3yjWyhJgboKg"
+        },
+        {
+            "name": "medicine_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{medicine-u}}} {{mod=@{medicine_bonus}}} {{r1=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmTb-xIFqIFcqeU"
+        },
+        {
+            "name": "perception_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{perception-u}}} {{mod=@{perception_bonus}}} {{r1=[[@{d20}+2[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+2[Proficiency]+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmU6KgYNj-BImeT"
+        },
+        {
+            "name": "survival_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{survival-u}}} {{mod=@{survival_bonus}}} {{r1=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+1[wisdom]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmW_YAPH8J2foJe"
+        },
+        {
+            "name": "deception_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{deception-u}}} {{mod=@{deception_bonus}}} {{r1=[[@{d20}+@{deception_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{deception_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmXgeVPA4HEqlRw"
+        },
+        {
+            "name": "intimidation_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{intimidation-u}}} {{mod=@{intimidation_bonus}}} {{r1=[[@{d20}+@{intimidation_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{intimidation_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmYYSEJja0ijhIr"
+        },
+        {
+            "name": "performance_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{performance-u}}} {{mod=@{performance_bonus}}} {{r1=[[@{d20}+@{performance_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{performance_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwm_ryzSa-2aaZXe"
+        },
+        {
+            "name": "persuasion_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{persuasion-u}}} {{mod=@{persuasion_bonus}}} {{r1=[[@{d20}+@{persuasion_bonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{persuasion_bonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSTmwmavynCerQstwQR"
+        },
+        {
+            "name": "global_damage_mod_roll",
+            "current": "",
+            "max": "",
+            "id": "-MSTmwnPmD8UmTEZPNy0"
+        },
+        {
+            "name": "global_damage_mod_crit",
+            "current": "",
+            "max": "",
+            "id": "-MSTmwnQJ5ZA_mJLj8xp"
+        },
+        {
+            "name": "global_damage_mod_type",
+            "current": "",
+            "max": "",
+            "id": "-MSTmwnRIi4sDDnUPpAs"
+        },
+        {
+            "name": "mancer_confirm_flag",
+            "current": "",
+            "max": "",
+            "id": "-MSTmwo0xJJDeFCHoxVa"
+        },
+        {
+            "name": "mancer_cancel",
+            "current": "on",
+            "max": "",
+            "id": "-MSz6-hQdGUA4jq_tCy7"
+        },
+        {
+            "name": "l1mancer_status",
+            "current": "completed",
+            "max": "",
+            "id": "-MSz6-jEu4wAJFLrljli"
+        },
+        {
+            "name": "tab",
+            "current": "spells",
+            "max": "",
+            "id": "-MSz67SUPbNRAddRUM0c"
+        },
+        {
+            "name": "options-class-selection",
+            "current": "on",
+            "max": "",
+            "id": "-MSz6CVBW3DCFA9CQQ1r"
+        },
+        {
+            "name": "jack_of_all_trades",
+            "current": "0",
+            "max": "",
+            "id": "-MSz6H9Bj8rLR9vCGPyT"
+        },
+        {
+            "name": "jack_bonus",
+            "current": "",
+            "max": "",
+            "id": "-MSz6HAvuaNSe2D207zS"
+        },
+        {
+            "name": "jack_attr",
+            "current": "",
+            "max": "",
+            "id": "-MSz6HAxBhyUmnUOLair"
+        },
+        {
+            "name": "initiative_bonus",
+            "current": 3,
+            "max": "",
+            "id": "-MSz6HB0W-jFECmrsqWl"
+        },
+        {
+            "name": "athletics_bonus",
+            "current": -2,
+            "max": "",
+            "id": "-MSz6HB2hNZwIoM_llTb"
+        },
+        {
+            "name": "acrobatics_bonus",
+            "current": 3,
+            "max": "",
+            "id": "-MSz6HB43ZIoNMnSNR2f"
+        },
+        {
+            "name": "sleight_of_hand_bonus",
+            "current": 3,
+            "max": "",
+            "id": "-MSz6HB6pMz6rgiKtCaG"
+        },
+        {
+            "name": "stealth_bonus",
+            "current": 3,
+            "max": "",
+            "id": "-MSz6HB7OxJ1wtsBiQaV"
+        },
+        {
+            "name": "arcana_bonus",
+            "current": 7,
+            "max": "",
+            "id": "-MSz6HB93NslPnukxuz-"
+        },
+        {
+            "name": "history_bonus",
+            "current": 7,
+            "max": "",
+            "id": "-MSz6HBAdmE36aYPNjbL"
+        },
+        {
+            "name": "investigation_bonus",
+            "current": 5,
+            "max": "",
+            "id": "-MSz6HBCTYnaQOwiIAvT"
+        },
+        {
+            "name": "nature_bonus",
+            "current": 5,
+            "max": "",
+            "id": "-MSz6HBFniNXv0kqbMmr"
+        },
+        {
+            "name": "religion_bonus",
+            "current": 7,
+            "max": "",
+            "id": "-MSz6HBG3IcYlPqAmm9b"
+        },
+        {
+            "name": "animal_handling_bonus",
+            "current": 1,
+            "max": "",
+            "id": "-MSz6HBISqo7aa95uGEq"
+        },
+        {
+            "name": "insight_bonus",
+            "current": 1,
+            "max": "",
+            "id": "-MSz6HBJwyUiza_3iqEM"
+        },
+        {
+            "name": "medicine_bonus",
+            "current": 1,
+            "max": "",
+            "id": "-MSz6HBMVUvU_QEsm-TR"
+        },
+        {
+            "name": "perception_bonus",
+            "current": 3,
+            "max": "",
+            "id": "-MSz6HBO-M1ynu1QWh-f"
+        },
+        {
+            "name": "survival_bonus",
+            "current": 1,
+            "max": "",
+            "id": "-MSz6HBPYgAMg4YIaS3W"
+        },
+        {
+            "name": "deception_bonus",
+            "current": 0,
+            "max": "",
+            "id": "-MSz6HBRM5M56w8PhRhF"
+        },
+        {
+            "name": "intimidation_bonus",
+            "current": 0,
+            "max": "",
+            "id": "-MSz6HBSKWsCyIu6GcRJ"
+        },
+        {
+            "name": "performance_bonus",
+            "current": 0,
+            "max": "",
+            "id": "-MSz6HBUm6oK6clWsiNx"
+        },
+        {
+            "name": "persuasion_bonus",
+            "current": 0,
+            "max": "",
+            "id": "-MSz6HBW_iawG3K6rBZs"
+        },
+        {
+            "name": "passive_wisdom",
+            "current": 13,
+            "max": "",
+            "id": "-MSz6HBb4WiAdFc8cKpI"
+        },
+        {
+            "name": "class_resource_name",
+            "current": "Psi Points",
+            "max": "",
+            "id": "-MSzPgToX4nOSAn60vbY"
+        },
+        {
+            "name": "class_resource",
+            "current": "6",
+            "max": "6",
+            "id": "-MSzPgTp888IQyo1PepI"
+        },
+        {
+            "name": "other_resource_name",
+            "current": "Arrows",
+            "max": "",
+            "id": "-MSzPgTqz71TCIp_2vYs"
+        },
+        {
+            "name": "other_resource",
+            "current": "81",
+            "max": "",
+            "id": "-MSzPgTrCqPO6dZMh-tR"
+        },
+        {
+            "name": "other_resource_itemid",
+            "current": "-MTDwuCDWacVH7E5wVTI",
+            "max": "",
+            "id": "-MSzPgTsDFc8UFK9oKsD"
+        },
+        {
+            "name": "class",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgTt1ZASqtBkm6HH"
+        },
+        {
+            "name": "class_display",
+            "current": "Mystic 3",
+            "max": "",
+            "id": "-MSzPgTvImveIZ4Wcvj7"
+        },
+        {
+            "name": "subclass",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgTw-Ec3NByw0hD1"
+        },
+        {
+            "name": "hitdietype",
+            "current": "8",
+            "max": "",
+            "id": "-MSzPgTxKrRUKcjV4NgR"
+        },
+        {
+            "name": "hitdie_final",
+            "current": "@{hitdietype}",
+            "max": "",
+            "id": "-MSzPgTyPREbqlhbI9LG"
+        },
+        {
+            "name": "race",
+            "current": "Gnome",
+            "max": "",
+            "id": "-MSzPgTzbU_y9dS_XCQa"
+        },
+        {
+            "name": "subrace",
+            "current": "Rock Gnome",
+            "max": "",
+            "id": "-MSzPgU0l6wj3T3-oqhE"
+        },
+        {
+            "name": "race_display",
+            "current": "Rock Gnome",
+            "max": "",
+            "id": "-MSzPgU5vQx_JotsPoae"
+        },
+        {
+            "name": "custom_class",
+            "current": "1",
+            "max": "",
+            "id": "-MSzPgU7BMeRh9zr3M_h"
+        },
+        {
+            "name": "cust_classname",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgU8Of8yfB97ecDq"
+        },
+        {
+            "name": "hp",
+            "current": "26",
+            "max": "26",
+            "id": "-MSzPgUQfe5bZFSQGcCo"
+        },
+        {
+            "name": "size",
+            "current": "Small",
+            "max": "",
+            "id": "-MSzPgUSQNxEXSOw0kRq"
+        },
+        {
+            "name": "speed",
+            "current": 25,
+            "max": "",
+            "id": "-MSzPgUVWo7sCVwCsnBs"
+        },
+        {
+            "name": "gp",
+            "current": "58",
+            "max": "",
+            "id": "-MSzPgUXncLQBFi6dGBQ"
+        },
+        {
+            "name": "alignment",
+            "current": "Neutral",
+            "max": "",
+            "id": "-MSzPgU_TMJS2uyfdGaJ"
+        },
+        {
+            "name": "spellcasting_ability",
+            "current": "@{intelligence_mod}+",
+            "max": "",
+            "id": "-MSzPgUaXkFZJgaa-g41"
+        },
+        {
+            "name": "cust_hitdietype",
+            "current": "8",
+            "max": "",
+            "id": "-MSzPgUb-UftE09n6NYo"
+        },
+        {
+            "name": "cust_spellslots",
+            "current": "full",
+            "max": "",
+            "id": "-MSzPgUcnAUQ2RfBW6iL"
+        },
+        {
+            "name": "cust_spellcasting_ability",
+            "current": "@{intelligence_mod}+",
+            "max": "",
+            "id": "-MSzPgUf36dERPqBeQG9"
+        },
+        {
+            "name": "ac",
+            "current": "15",
+            "max": "",
+            "id": "-MSzPgUiyDBc0khXjYd6"
+        },
+        {
+            "name": "death_save_bonus",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgUjjje57cEKIf0Y"
+        },
+        {
+            "name": "weighttotal",
+            "current": 92.71,
+            "max": "",
+            "id": "-MSzPgUkG-EKWpGZrVhw"
+        },
+        {
+            "name": "hit_dice",
+            "current": "1",
+            "max": 3,
+            "id": "-MSzPgUnADE2KyOf9n1D"
+        },
+        {
+            "name": "pb",
+            "current": "2",
+            "max": "",
+            "id": "-MSzPgUoqhQr8BB0YBHc"
+        },
+        {
+            "name": "jack",
+            "current": 1,
+            "max": "",
+            "id": "-MSzPgUp06g9wMqmo6VK"
+        },
+        {
+            "name": "caster_level",
+            "current": 3,
+            "max": "",
+            "id": "-MSzPgUqXNzXtZbUZgK2"
+        },
+        {
+            "name": "spell_attack_mod",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgUrKjMTyeW65pec"
+        },
+        {
+            "name": "spell_attack_bonus",
+            "current": 7,
+            "max": "",
+            "id": "-MSzPgUspqx_WQAisZaf"
+        },
+        {
+            "name": "spell_save_dc",
+            "current": 15,
+            "max": "",
+            "id": "-MSzPgUuDCGWDQ7Ojh_2"
+        },
+        {
+            "name": "custom_ac_base",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgUwt1MiEebhhkKO"
+        },
+        {
+            "name": "custom_ac_part1",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgUwt1MiEebhhkKP"
+        },
+        {
+            "name": "custom_ac_part2",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgUxcbIp_W6hb7OK"
+        },
+        {
+            "name": "custom_ac_shield",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgUy0u6zmWaAvd88"
+        },
+        {
+            "name": "background",
+            "current": "Sage",
+            "max": "",
+            "id": "-MSzPgUzfL2vnmXpl4TX"
+        },
+        {
+            "name": "global_damage_mod_flag",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgV-KTdJt9mgKVC_"
+        },
+        {
+            "name": "global_ac_mod_flag",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgV0U-SakfPDuxXj"
+        },
+        {
+            "name": "global_attack_mod_flag",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgV1blwM14rbR___"
+        },
+        {
+            "name": "global_save_mod_flag",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgV29w4agPq60xau"
+        },
+        {
+            "name": "global_skill_mod_flag",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgV3jwV3OidTVg2d"
+        },
+        {
+            "name": "halflingluck_flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgV4-GqKkd7u4mUC"
+        },
+        {
+            "name": "base_level",
+            "current": "3",
+            "max": "",
+            "id": "-MSzPgV6hCdpLO92_E1f"
+        },
+        {
+            "name": "level",
+            "current": 3,
+            "max": "",
+            "id": "-MSzPgV8coDwmPPnye-g"
+        },
+        {
+            "name": "armorwarningflag",
+            "current": "hide",
+            "max": "",
+            "id": "-MSzPgVAGYreEyZ_aHRc"
+        },
+        {
+            "name": "customacwarningflag",
+            "current": "hide",
+            "max": "",
+            "id": "-MSzPgVCVN4qG80lluxR"
+        },
+        {
+            "name": "custom_ac_flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgVDmI31xVfRCpvE"
+        },
+        {
+            "name": "custom_attack_flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgVFcmG6uoCa_gru"
+        },
+        {
+            "name": "multiclass1_flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgVGRnIBdPwO87bB"
+        },
+        {
+            "name": "multiclass1_lvl",
+            "current": "1",
+            "max": "",
+            "id": "-MSzPgVIreabL47gNCyz"
+        },
+        {
+            "name": "multiclass2_flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgVJJKfxqUK-ZQjq"
+        },
+        {
+            "name": "multiclass2_lvl",
+            "current": "1",
+            "max": "",
+            "id": "-MSzPgVLT2t2NryQux2x"
+        },
+        {
+            "name": "multiclass3_flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgVMVbUa1afPJcLB"
+        },
+        {
+            "name": "multiclass3_lvl",
+            "current": "1",
+            "max": "",
+            "id": "-MSzPgVOaBSd0uDW6h5g"
+        },
+        {
+            "name": "athletics_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVQhgP4k0vx_9wr"
+        },
+        {
+            "name": "athletics_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVRScpXyl3tqZRv"
+        },
+        {
+            "name": "acrobatics_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVUAxeHs1pf-czX"
+        },
+        {
+            "name": "acrobatics_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVVn6J2RE91aDbg"
+        },
+        {
+            "name": "sleight_of_hand_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVWjwKy_X9_LmVM"
+        },
+        {
+            "name": "sleight_of_hand_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVX8HLvTa3rjMtY"
+        },
+        {
+            "name": "stealth_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgV_P5kG7p7snhUw"
+        },
+        {
+            "name": "stealth_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgValBu-ZvsKQHbO"
+        },
+        {
+            "name": "arcana_prof",
+            "current": "(@{pb}*@{arcana_type})",
+            "max": "",
+            "id": "-MSzPgVcpMAEBrlnu_VV"
+        },
+        {
+            "name": "arcana_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVeMnqLqQAIhRdq"
+        },
+        {
+            "name": "history_prof",
+            "current": "(@{pb}*@{history_type})",
+            "max": "",
+            "id": "-MSzPgVgE3FW3nhiljoT"
+        },
+        {
+            "name": "history_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVhPVAeSio2J8Af"
+        },
+        {
+            "name": "investigation_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVjem2npCqc93kg"
+        },
+        {
+            "name": "investigation_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVkUx7BQDScJkIV"
+        },
+        {
+            "name": "nature_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVm0vU5hhcXi5tC"
+        },
+        {
+            "name": "nature_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVnZVrFxTf1Fy0i"
+        },
+        {
+            "name": "religion_prof",
+            "current": "(@{pb}*@{religion_type})",
+            "max": "",
+            "id": "-MSzPgVoDDkRkmSEXQRI"
+        },
+        {
+            "name": "religion_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVpH56SxQnkWpkA"
+        },
+        {
+            "name": "animal_handling_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVrHmesNrYqPFMa"
+        },
+        {
+            "name": "animal_handling_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVsuG4g1LAvvVn8"
+        },
+        {
+            "name": "insight_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVuPVKSkBJRgtZC"
+        },
+        {
+            "name": "insight_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVviRMGbml3nmwE"
+        },
+        {
+            "name": "medicine_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVxL_9-9lQ0ENhC"
+        },
+        {
+            "name": "medicine_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgVyWJ5xU9HVdOlV"
+        },
+        {
+            "name": "perception_prof",
+            "current": "(@{pb}*@{perception_type})",
+            "max": "",
+            "id": "-MSzPgVzAZ6tB2Q5FQPG"
+        },
+        {
+            "name": "perception_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgW0j0IMqSAyVUZs"
+        },
+        {
+            "name": "survival_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgW2U3IlVPCRcCee"
+        },
+        {
+            "name": "survival_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgW3neAesRJ0iqKt"
+        },
+        {
+            "name": "deception_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgW67HloJI_WMqQA"
+        },
+        {
+            "name": "deception_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgW7PL3Gm9N2MRgH"
+        },
+        {
+            "name": "intimidation_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWAw6YLdMOd10A-"
+        },
+        {
+            "name": "intimidation_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWBZz2_9vOtYT9V"
+        },
+        {
+            "name": "performance_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWD8eGXDQhQCQJ-"
+        },
+        {
+            "name": "performance_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWECbfQ42k2hOQw"
+        },
+        {
+            "name": "persuasion_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWGC87lkFhNMrtD"
+        },
+        {
+            "name": "persuasion_type",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWIAcLkKDilH6j8"
+        },
+        {
+            "name": "strength_save_prof",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWKPemHMPD3xex5"
+        },
+        {
+            "name": "strength_save_bonus",
+            "current": -2,
+            "max": "",
+            "id": "-MSzPgWLLd5HLFWV1uJi"
+        },
+        {
+            "name": "strength_bonus",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWM93eXnAxa2EFB"
+        },
+        {
+            "name": "cust_strength_save_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWOmFRuFPgf4IeR"
+        },
+        {
+            "name": "dexterity_save_prof",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWRsM7gF6aLem6X"
+        },
+        {
+            "name": "dexterity_save_bonus",
+            "current": 3,
+            "max": "",
+            "id": "-MSzPgWSkwHrTH7z2XyR"
+        },
+        {
+            "name": "dexterity_bonus",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWUWovk2poxMEIn"
+        },
+        {
+            "name": "cust_dexterity_save_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWVRLBuHF25x6af"
+        },
+        {
+            "name": "constitution_save_prof",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWWzereJW3Sl5no"
+        },
+        {
+            "name": "constitution_save_bonus",
+            "current": 2,
+            "max": "",
+            "id": "-MSzPgWXmjKBBzNydc1H"
+        },
+        {
+            "name": "constitution_bonus",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWYtN3w3efZLZ5L"
+        },
+        {
+            "name": "cust_constitution_save_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgW_xrbYRJGUlt12"
+        },
+        {
+            "name": "intelligence_save_prof",
+            "current": "(@{pb})",
+            "max": "",
+            "id": "-MSzPgWahJjrBReyqpl0"
+        },
+        {
+            "name": "intelligence_save_bonus",
+            "current": 7,
+            "max": "",
+            "id": "-MSzPgWbta2uw4U2M9i5"
+        },
+        {
+            "name": "intelligence_bonus",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWc6UXTMp7SfEJ5"
+        },
+        {
+            "name": "cust_intelligence_save_prof",
+            "current": "(@{pb})",
+            "max": "",
+            "id": "-MSzPgWex4NB24--2v6x"
+        },
+        {
+            "name": "wisdom_save_prof",
+            "current": "(@{pb})",
+            "max": "",
+            "id": "-MSzPgWg3fzf7cd8roZs"
+        },
+        {
+            "name": "wisdom_save_bonus",
+            "current": 3,
+            "max": "",
+            "id": "-MSzPgWi0r7YCtljn6gQ"
+        },
+        {
+            "name": "wisdom_bonus",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWjRTPgUcAxxX2W"
+        },
+        {
+            "name": "cust_wisdom_save_prof",
+            "current": "(@{pb})",
+            "max": "",
+            "id": "-MSzPgWoNZ8I-rvCyZRM"
+        },
+        {
+            "name": "charisma_save_prof",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWpFgmTktjyTrWF"
+        },
+        {
+            "name": "charisma_save_bonus",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgWqkOsjUqAjz3A8"
+        },
+        {
+            "name": "charisma_bonus",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgWrDRMmNihsUKoo"
+        },
+        {
+            "name": "cust_charisma_save_prof",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgWtRgRiGZ_ct2Cs"
+        },
+        {
+            "name": "personality_traits",
+            "current": "I'm convinced that people are always trying to steal my secrets.\n\nYou write down the name of each creature  you slay, and name ones that are unnamed",
+            "max": "",
+            "id": "-MSzPgWuOUP4Frb9xHG-"
+        },
+        {
+            "name": "ideals",
+            "current": "Knowledge. The path to power and self-improvement is through knowledge. (Neutral)",
+            "max": "",
+            "id": "-MSzPgWv8-nGIQYMbzs4"
+        },
+        {
+            "name": "bonds",
+            "current": "I have an ancient text that holds terrible secrets that must not fall into the wrong hands.",
+            "max": "",
+            "id": "-MSzPgWwGB3h0eOTsaIX"
+        },
+        {
+            "name": "flaws",
+            "current": "Unlocking an ancient mystery is worth the price of a civilization.",
+            "max": "",
+            "id": "-MSzPgWxXcoyYZEai5NI"
+        },
+        {
+            "name": "intelligence_base",
+            "current": 20,
+            "max": "",
+            "id": "-MSzPgWyNyz2UjeZ8aZ5"
+        },
+        {
+            "name": "constitution_base",
+            "current": 15,
+            "max": "",
+            "id": "-MSzPgX0BzZfzM4oOXkm"
+        },
+        {
+            "name": "strength_base",
+            "current": "7",
+            "max": "",
+            "id": "-MSzPgX2vYQmGOC3Niva"
+        },
+        {
+            "name": "dexterity_base",
+            "current": 16,
+            "max": "",
+            "id": "-MSzPgX3bJiz44HkT6LY"
+        },
+        {
+            "name": "wisdom_base",
+            "current": 12,
+            "max": "",
+            "id": "-MSzPgX5HWHO9Ry5zzme"
+        },
+        {
+            "name": "charisma_base",
+            "current": 11,
+            "max": "",
+            "id": "-MSzPgX6E2vD2T15Flz3"
+        },
+        {
+            "name": "d20",
+            "current": "1d20",
+            "max": "",
+            "id": "-MSzPg_aofZNe1SxuKTk"
+        },
+        {
+            "name": "encumberance",
+            "current": " ",
+            "max": "",
+            "id": "-MSzPg_isRAfGLnWCZtv"
+        },
+        {
+            "name": "strength_flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPg_lT4PQN7OZ56f3"
+        },
+        {
+            "name": "strength",
+            "current": 7,
+            "max": "",
+            "id": "-MSzPg_nCeKKxj8D6Hxt"
+        },
+        {
+            "name": "dexterity_flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPg_oC-5wPpslzrTc"
+        },
+        {
+            "name": "dexterity",
+            "current": 16,
+            "max": "",
+            "id": "-MSzPg_qoQcaTqDZu7Yk"
+        },
+        {
+            "name": "constitution_flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPg_rNhqH0xNfqLoX"
+        },
+        {
+            "name": "constitution",
+            "current": 15,
+            "max": "",
+            "id": "-MSzPg_tgkSS5GTHJFgz"
+        },
+        {
+            "name": "intelligence_flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPg_wZ_GyBGOEVGD2"
+        },
+        {
+            "name": "intelligence",
+            "current": 20,
+            "max": "",
+            "id": "-MSzPg_yJI-raWcv0EPx"
+        },
+        {
+            "name": "wisdom_flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPga-glOiYFaYRVW6"
+        },
+        {
+            "name": "wisdom",
+            "current": 12,
+            "max": "",
+            "id": "-MSzPga0E0-Gjx-3umYW"
+        },
+        {
+            "name": "charisma_flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPga2uj9Y3oKw1CDS"
+        },
+        {
+            "name": "charisma",
+            "current": 11,
+            "max": "",
+            "id": "-MSzPga3mm-EIO09T-py"
+        },
+        {
+            "name": "strength_mod",
+            "current": -2,
+            "max": "",
+            "id": "-MSzPgc0Ca7zW0Xg4NqF"
+        },
+        {
+            "name": "npc_str_negative",
+            "current": 1,
+            "max": "",
+            "id": "-MSzPgc2-DBoPvqSfyEz"
+        },
+        {
+            "name": "dexterity_mod",
+            "current": 3,
+            "max": "",
+            "id": "-MSzPgc4lKM62XFh-Ff_"
+        },
+        {
+            "name": "npc_dex_negative",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgc6s-P7qYZj2w93"
+        },
+        {
+            "name": "constitution_mod",
+            "current": 2,
+            "max": "",
+            "id": "-MSzPgc9dB-kpcgcrTeY"
+        },
+        {
+            "name": "npc_con_negative",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgcA1j5MQgRXO7ND"
+        },
+        {
+            "name": "intelligence_mod",
+            "current": 5,
+            "max": "",
+            "id": "-MSzPgcDi1gQ4FRaPviX"
+        },
+        {
+            "name": "npc_int_negative",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgcGZ1oCjT7UN2zY"
+        },
+        {
+            "name": "wisdom_mod",
+            "current": 1,
+            "max": "",
+            "id": "-MSzPgcJ1PA2mB_G6Czi"
+        },
+        {
+            "name": "npc_wis_negative",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgcK-xpunZzQdHr1"
+        },
+        {
+            "name": "charisma_mod",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgcMOcN9-sg9Ub7q"
+        },
+        {
+            "name": "npc_cha_negative",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgcOld-u8ygFfnsM"
+        },
+        {
+            "name": "drop_category",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgtO5NmCITxfp_2w"
+        },
+        {
+            "name": "drop_name",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgtPEv8RUedQC6WK"
+        },
+        {
+            "name": "drop_data",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgtR_ktp2PmCRAlO"
+        },
+        {
+            "name": "drop_content",
+            "current": "",
+            "max": "",
+            "id": "-MSzPgtT12t3uhzKwua4"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjB_name",
+            "current": "Mystic Order - 1st",
+            "max": "",
+            "id": "-MSzPgtcHeFMBgM4ffDP"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjB_description",
+            "current": "At 1st level, you choose a Mystic Order: the  Order of the Avatar, the Order of the Awakened,  the Order of the Immortal, the Order of the  Nomad, the Order of the Soul Knife, or the Order  of the Wu Jen, each of which is detailed at the  end of the class description. Each order  specializes in a specific approach to psionics. Your order gives you features when you  choose it at 1st level and additional features at  3rd, 6th, and 14th level.",
+            "max": "",
+            "id": "-MSzPgteeWWbFlLzmACz"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjB_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgtg-r4WMiM0W271"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjB_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgtiqn5nFN03AEBB"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjB_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgtjA7_CVjYpq4wN"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjB_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgtlCi5dehI9W514"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjC_name",
+            "current": "Mystical Recovery  - 2nd",
+            "max": "",
+            "id": "-MSzPgtninbg0BbX7f5r"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjC_description",
+            "current": "Starting at 2nd level, you can draw vigor from  the psi energy you use to power your psionic  disciplines. Immediately after you spend psi points on a  psionic discipline, you can take a bonus action to  regain hit points equal to the number of psi  points you spent.",
+            "max": "",
+            "id": "-MSzPgtpnuWn6u6ReM9y"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjC_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgtrftDxSSK2YBUu"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjC_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgttiWvZPiKqEcUX"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjC_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgtv_fc8HVUtZy1C"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjC_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgtxlwoFXkPd7gAf"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjD_name",
+            "current": "Telepathy - 2nd",
+            "max": "",
+            "id": "-MSzPgtzbBQTonZkE-65"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjD_description",
+            "current": "At 2nd level, your mind awakens to the ability to  communicate via telepathy. You can telepathically speak to any creature you can see  within 120 feet of you in this manner. You don’t  need to share a language with the creature for it  to understand your telepathic messages, but the  creature must be able to understand at least one  language or be telepathic itself.",
+            "max": "",
+            "id": "-MSzPgu0iJyUUF__io5j"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjD_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgu2v_rSxus2YnZ1"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjD_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgu3cwD7PAyYK7uA"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjD_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgu5mv-GoA9mF883"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjD_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgu7PD1GxT0iayE3"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjE_name",
+            "current": "Ability Score Improvement  - 4,8,12,16,19",
+            "max": "",
+            "id": "-MSzPgu9ACOvNNLAhQ-v"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjE_description",
+            "current": "When you reach 4th level, and again at 8th, 12th,  16th, and 19th level, you can increase one ability  score of your choice by 2, or you can increase  two ability scores of your choice by 1. As normal,  you can’t increase an ability score above 20  using this feature.",
+            "max": "",
+            "id": "-MSzPguBKiijHnoaB9B4"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjE_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPguDYxnB3u348WUM"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjE_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPguEe2G4XWvDB2xj"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjE_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPguGg-Ji7uLpeGpu"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjE_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPguImyOOmL_kivpc"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjF_name",
+            "current": "Strength of Mind - 4th",
+            "max": "",
+            "id": "-MSzPguLiqLyA7cDDYAY"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjF_description",
+            "current": "Even the simplest psionic technique requires a  deep understanding of how psionic energy can  augment mind and body. This understanding  allows you to alter your defenses to better deal  with threats. Starting at 4th level, you can replace your  proficiency in Wisdom saving throws whenever  you finish a short or long rest. To do so, choose  Strength, Dexterity, Constitution, or Charisma.  You gain proficiency in saves using that ability,  instead of Wisdom. This change lasts until you  finish your next short or long rest.",
+            "max": "",
+            "id": "-MSzPguN8A0bLRWXa8bm"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjF_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPguOLFmUtviDHobx"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjF_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPguQZ02JRZdyoDFO"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjF_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPguScRgWvQ3Ccis_"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjF_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPguTgtVabCki_NT9"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjG_name",
+            "current": "Potent Psionics - 8th, 14th",
+            "max": "",
+            "id": "-MSzPguVutunvzsmUkzh"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjG_description",
+            "current": "At 8th level, you gain the ability to infuse your  weapon attacks with psychic energy. Once on  each of your turns when you hit a creature with  a weapon, you can deal an extra 1d8 psychic  damage to that target. When you reach 14th  level, this extra damage increases to 2d8. In addition, you add your Intelligence modifier  to any damage roll you make for a psionic talent.",
+            "max": "",
+            "id": "-MSzPguWhVeZoes5ss_w"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjG_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPguY9WecCiWy0Cd6"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjG_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgu_xKUXB-DnEESO"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjG_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgua4_kj1019-T97"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjG_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgucHARflxoivFi1"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjH_name",
+            "current": "Consumptive Power - 10th",
+            "max": "",
+            "id": "-MSzPgufu9v-15esub7v"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjH_description",
+            "current": "At 10th level, you gain the ability to sacrifice  your physical durability in exchange for psionic power. When activating a psionic discipline, you  can pay its psi point cost with your hit points,  instead of using any psi points. Your current hit  points and hit point maximum are both reduced by the number of hit points you spend. This  reduction can’t be lessened in any way, and the  reduction to your hit point maximum lasts until  you finish a long rest. Once you use this feature, you can’t use it again  until you finish a long rest.",
+            "max": "",
+            "id": "-MSzPguhXwF3WiOGFAF-"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjH_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgujuXmPDhAYXCFJ"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjH_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgul8f-9q21pFt2U"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjH_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPguneqkRa99TG65_"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjH_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPguruQTk2FfRl4pS"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjI_name",
+            "current": "Psionic Mastery - 11th, 17th",
+            "max": "",
+            "id": "-MSzPguscb5aLSIg1Ybt"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjI_description",
+            "current": "Beginning at 11th level, your mastery of psionic  energy allows you to push your mind beyond its  normal limits. As an action, you gain 9 special psi  points that you can spend only on disciplines  that require an action or a bonus action to use.  You can use all 9 points on one discipline, or you  can spread them across multiple disciplines. You  can’t also spend your normal psi points on these disciplines; you can spend only the special points gained from this feature. When you finish a long  rest, you lose any of these special points that you  haven’t spent. If more than one of the disciplines you activate  with these points require concentration, you can  concentrate on all of them. Activating one of  them ends any effect you were already  concentrating on, and if you begin concentrating  on an effect that doesn’t use these special points,  the disciplines end that you’re concentrating on. At 15th level, the pool of psi points you gain  from this feature increases to 11. You have one use of this feature, and you  regain any expended use of it with a long rest. You gain one additional use of this feature at  13th, 15th, and 17th level.",
+            "max": "",
+            "id": "-MSzPguuCFd5S_brU5aF"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjI_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPguw3uJNwJSNEWDa"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjI_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPguxY2OEfL_O_bBM"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjI_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPguzZaH7-iz6F3sc"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjI_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgv03cPCbcLZU6xT"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjJ_name",
+            "current": "Psionic Body - 20th",
+            "max": "",
+            "id": "-MSzPgv2izCnrE9AiG-V"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjJ_description",
+            "current": "At 20th level, your mastery of psionic power  causes your mind to transcend the body. Your  physical form is infused with psionic energy. You  gain the following benefits: \n• You gain resistance to bludgeoning, piercing,  and slashing damage. \n• You no longer age. \n• You are immune to disease, poison damage,  and the poisoned condition. \n• If you die, roll a d20. On a 10 or higher, you  discorporate with 0 hit points, instead of  dying, and you fall unconscious. You and your  gear disappear. You appear at a spot of your  choice 1d3 days later on the plane of existence  where you died, having gained the benefits of  one long rest.",
+            "max": "",
+            "id": "-MSzPgv3yfv-4-kYTj5-"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjJ_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgv5s0JaaFLtecCN"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjJ_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgv763Q3TRmtBGTr"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjJ_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgv9R-TwvNCdfAtl"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjJ_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgvAS46kG2op56hY"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjK_name",
+            "current": "Order of the Immortal - Bonus Disciplines - 1st",
+            "max": "",
+            "id": "-MSzPgvCIo-K6aINNDQL"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjK_description",
+            "current": "At 1st level, you learn two additional psionic  disciplines of your choice. They must be chosen  from among the Immortal disciplines.",
+            "max": "",
+            "id": "-MSzPgvEwcxfLfEkAmtk"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjK_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgvFoY7kqIa-zBdM"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjK_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgvHsuVIvyuBThpq"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjK_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgvJn-go63Dz5lCM"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjK_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgvMOkolrLBfqTft"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjL_name",
+            "current": "Order of the Immortal - Immortal Durability - 1st",
+            "max": "",
+            "id": "-MSzPgvOL9FNqF2msFTG"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjL_description",
+            "current": "Starting at 1st level, your hit point maximum  increases by 1 per mystic level. In addition, while you aren’t wearing armor or  wielding a shield, your base AC equals 10 + your  Dexterity modifier + your Constitution modifier.",
+            "max": "",
+            "id": "-MSzPgvQHf-8juDFZiIX"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjL_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgvSTYfiNyvtJu-T"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjL_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgvTFficIBEjJsIK"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjL_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgvVfH0j1GfpxZrI"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjL_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgvXaXsRHO5d0eBg"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjM_name",
+            "current": "Order of the Immortal - Psionic Resilience - 3rd",
+            "max": "",
+            "id": "-MSzPgvYTlUGhZeMcyYN"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjM_description",
+            "current": "Starting at 3rd level, your psionic energy grants  you extraordinary fortitude. At the start of each  of your turns, you gain temporary hit points  equal to your Intelligence modifier (minimum of  0) if you have at least 1 hit point.",
+            "max": "",
+            "id": "-MSzPgv_sYr6_uh41yNL"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjM_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgvbsBhPxbW2KAws"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjM_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgvc6VdHnBzA4euo"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjM_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgvev2Ow6w5QrYPu"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjM_display_flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgvgTR719iJU-mo2"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjN_name",
+            "current": "Order of the Immortal - Surge\tof Health - 6th",
+            "max": "",
+            "id": "-MSzPgvicx35O7-MdaaV"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjN_description",
+            "current": "Starting at 6th level, you can draw on your  psychic focus to escape death’s grasp. As a  reaction when you take damage, you can halve  that damage against you. Your psychic focus immediately ends if it’s active, and you can’t use  it until you finish a short or long rest. You can’t use this feature if you can’t use your  psychic focus",
+            "max": "",
+            "id": "-MSzPgvjCXi1gwMUYHr7"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjN_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgvlHQSHZHJJIhGH"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjN_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgvnGH-5421PNoca"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjN_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgvqctnJ4um4OfTY"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtHo2VkFL8YwWjN_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgvr8mcswRAgy3EA"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lx_name",
+            "current": "Order of the Immortal - Immortal Will - 14th",
+            "max": "",
+            "id": "-MSzPgvtONzhFnF60s7R"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lx_description",
+            "current": "Starting at 14th level, you can draw on your  reserves of psionic power to survive beyond  death. At the end of your turn while at 0 hit  points, you can spend 5 psi points to  immediately regain a number of hit points equal  to your mystic level + your Constitution  modifier.",
+            "max": "",
+            "id": "-MSzPgvu7s8E2GgwfAIe"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lx_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MSzPgvwVrdIxmLJHSJV"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lx_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MSzPgvzzUp9iJACqIhL"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lx_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgw3kY7KGlIbdRie"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lx_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgw5bqwSvy228hTH"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Ly_name",
+            "current": "Gnome Cunning",
+            "max": "",
+            "id": "-MSzPgwCX56aAnXKOBkR"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Ly_description",
+            "current": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
+            "max": "",
+            "id": "-MSzPgwDoS9IBmbbVOSl"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Ly_source_type",
+            "current": "Gnome",
+            "max": "",
+            "id": "-MSzPgwFatERnw64SWbJ"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Ly_source",
+            "current": "Racial",
+            "max": "",
+            "id": "-MSzPgwHl12IhfalNdJS"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Ly_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgwIz2W2FRRFgF0-"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Ly_display_flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgwKLhAO6tNvcnNG"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lz_name",
+            "current": "Darkvision",
+            "max": "",
+            "id": "-MSzPgwLs0wwvoxMVwNx"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lz_description",
+            "current": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+            "max": "",
+            "id": "-MSzPgwN6ICmD-Dnv-Rg"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lz_source_type",
+            "current": "Gnome",
+            "max": "",
+            "id": "-MSzPgwPA1XWYOcFSO7y"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lz_source",
+            "current": "Racial",
+            "max": "",
+            "id": "-MSzPgwRCO_orSJPf_DO"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lz_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgwTR3a4a1Ryl9BK"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4Lz_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgwVC8UVMFb7upOY"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtI30S1wWVbw4M-_name",
+            "current": "Common",
+            "max": "",
+            "id": "-MSzPgwWu-PJ7f6Ck4oN"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtI30S1wWVbw4M-_prof_type",
+            "current": "LANGUAGE",
+            "max": "",
+            "id": "-MSzPgw_JgFCFSugBexE"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtI30S1wWVbw4M-_options-flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgwaHy2XZFzwgwG3"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtI30S1wWVbw4M0_name",
+            "current": "Gnomish",
+            "max": "",
+            "id": "-MSzPgwcwNUyzTcv1Bn4"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtI30S1wWVbw4M0_prof_type",
+            "current": "LANGUAGE",
+            "max": "",
+            "id": "-MSzPgweh_28_CaGkXo2"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtI30S1wWVbw4M0_options-flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgwfX94-GBvpMQ1v"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M1_name",
+            "current": "Artificer's Lore",
+            "max": "",
+            "id": "-MSzPgwi-6JpCnwnN-44"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M1_description",
+            "current": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.",
+            "max": "",
+            "id": "-MSzPgwkl8O0GmIcX4ED"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M1_source_type",
+            "current": "Rock Gnome",
+            "max": "",
+            "id": "-MSzPgwlf-IUtF5MV4Yn"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M1_source",
+            "current": "Racial",
+            "max": "",
+            "id": "-MSzPgwnCYvpkVLbY9kG"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M1_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgwokQe25vcFOu1o"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M1_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgwqtuBm_EyMBBBo"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M2_name",
+            "current": "Tinker",
+            "max": "",
+            "id": "-MSzPgwruDeIHgZeCqjM"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M2_description",
+            "current": "You have proficiency with artisan’s tools (tinker’s tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.\nWhen you create a device, choose one of the following options:\nClockwork Toy: This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.\nFire Starter: The device produces a miniature flame, which you can use to light a Candle, torch, or campfire. Using the device requires your action.\nMusic Box: When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed.",
+            "max": "",
+            "id": "-MSzPgwtqIB1xx4fz2pB"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M2_source_type",
+            "current": "Rock Gnome",
+            "max": "",
+            "id": "-MSzPgwvkHQPheYsqGlD"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M2_source",
+            "current": "Racial",
+            "max": "",
+            "id": "-MSzPgwwPa9KwSttVTMn"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M2_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgwxbCrQ5A06S0Q5"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtI30S1wWVbw4M2_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgwz2jDBsQ9qMiIJ"
+        },
+        {
+            "name": "repeating_tool_-MSzPgtI30S1wWVbw4M3_toolname",
+            "current": "Tinker's Tools",
+            "max": "",
+            "id": "-MSzPgx-2ZuDgakHhBRd"
+        },
+        {
+            "name": "repeating_tool_-MSzPgtI30S1wWVbw4M3_toolbonus_base",
+            "current": "(@{pb})",
+            "max": "",
+            "id": "-MSzPgx1dB3EwDcKjGpS"
+        },
+        {
+            "name": "repeating_tool_-MSzPgtI30S1wWVbw4M3_toolattr_base",
+            "current": "?{Attribute?|Strength,@{strength_mod}|Dexterity,@{dexterity_mod}|Constitution,@{constitution_mod}|Intelligence,@{intelligence_mod}|Wisdom,@{wisdom_mod}|Charisma,@{charisma_mod}}",
+            "max": "",
+            "id": "-MSzPgx31U15G1K-Awad"
+        },
+        {
+            "name": "repeating_tool_-MSzPgtI30S1wWVbw4M3_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgx4QTGqhyjCxIyt"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83A_name",
+            "current": "Researcher",
+            "max": "",
+            "id": "-MSzPgx6Jbhbq3s1hqFL"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83A_description",
+            "current": "When you attempt to learn or recall a piece of lore, if you do not know that information, you often know where and from whom you can obtain it. Usually, this information comes from a library, scriptorium, university, or a sage or other learned person or creature. Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found. Unearthing the deepest secrets of the multiverse can require an adventure or even a whole campaign.",
+            "max": "",
+            "id": "-MSzPgx8K4HL_jN3mZad"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83A_source_type",
+            "current": "Sage",
+            "max": "",
+            "id": "-MSzPgx9WwpVIvHexAC-"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83A_source",
+            "current": "Background",
+            "max": "",
+            "id": "-MSzPgxBNKjx7EQanJHb"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83A_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgxDas5Znp1dEqay"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83A_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgxF-4mpqh1gEhs5"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83B_name",
+            "current": "Specialty",
+            "max": "",
+            "id": "-MSzPgxGDBO9UWuA4Sox"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83B_description",
+            "current": "Professor",
+            "max": "",
+            "id": "-MSzPgxIdTjv3pvDtVRc"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83B_source_type",
+            "current": "Sage",
+            "max": "",
+            "id": "-MSzPgxKkIttCVS79hlF"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83B_source",
+            "current": "Background",
+            "max": "",
+            "id": "-MSzPgxLVi39XVwdTDiA"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83B_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgxN83Ulcm8iEsKE"
+        },
+        {
+            "name": "repeating_traits_-MSzPgtJhq9EXcOhx83B_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MSzPgxPMBKE0eHbBy4X"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtJhq9EXcOhx83C_name",
+            "current": "Light Armor",
+            "max": "",
+            "id": "-MSzPgxR8_MrupdbgD7B"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtJhq9EXcOhx83C_prof_type",
+            "current": "ARMOR",
+            "max": "",
+            "id": "-MSzPgxTyk_Szi7EBLpZ"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtJhq9EXcOhx83C_options-flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgxUI8ZjDdZGNKU7"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtJhq9EXcOhx83D_name",
+            "current": "Simple Weapons",
+            "max": "",
+            "id": "-MSzPgxVMOIslHF3USWM"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtJhq9EXcOhx83D_prof_type",
+            "current": "WEAPON",
+            "max": "",
+            "id": "-MSzPgxXtXWbDAiQ3w-Y"
+        },
+        {
+            "name": "repeating_proficiencies_-MSzPgtJhq9EXcOhx83D_options-flag",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgxYhVJkeYZSEHtV"
+        },
+        {
+            "name": "options-flag-personality",
+            "current": "0",
+            "max": "",
+            "id": "-MSzPgy4vAIDdH0I-6Hg"
+        },
+        {
+            "name": "options-flag-ideals",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgy7M8Bu9mhEVaVH"
+        },
+        {
+            "name": "options-flag-bonds",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgyAaaX6t2GuUyyw"
+        },
+        {
+            "name": "options-flag-flaws",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPgyCuj4QdpjoYJJe"
+        },
+        {
+            "name": "repeating_tool_-MSzPgtI30S1wWVbw4M3_toolattr",
+            "current": "QUERY",
+            "max": "",
+            "id": "-MSzPh-Htn3sB_83cQSj"
+        },
+        {
+            "name": "repeating_tool_-MSzPgtI30S1wWVbw4M3_toolbonus",
+            "current": "?{Attribute?|Strength,@{strength_mod}|Dexterity,@{dexterity_mod}|Constitution,@{constitution_mod}|Intelligence,@{intelligence_mod}|Wisdom,@{wisdom_mod}|Charisma,@{charisma_mod}}+0+2",
+            "max": "",
+            "id": "-MSzPh-Ikxi1X9DEuJlP"
+        },
+        {
+            "name": "repeating_tool_-MSzPgtI30S1wWVbw4M3_toolbonus_display",
+            "current": "?",
+            "max": "",
+            "id": "-MSzPh-KvMrVQqHIvlPD"
+        },
+        {
+            "name": "pbd_safe",
+            "current": "",
+            "max": "",
+            "id": "-MSzPh2djCLGUdU9BTAm"
+        },
+        {
+            "name": "repeating_tool_-MSzPgtI30S1wWVbw4M3_toolroll",
+            "current": "@{wtype}&{template:simple} {{rname=@{toolname}}} {{mod=@{toolbonus}}} {{r1=[[@{d20}+@{toolbonus}[Mods]@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{toolbonus}[Mods]@{pbd_safe}]]}} {{global=@{global_skill_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSzPh2fXWJJ-6xIjLzD"
+        },
+        {
+            "name": "_reporder_repeating_proficiencies",
+            "current": "-MSzPgtJhq9EXcOhx83C,-MSzPgtI30S1wWVbw4M-,-MSzPgtI30S1wWVbw4M0,-MSzPgtJhq9EXcOhx83D",
+            "max": "",
+            "id": "-MSzPh2zhagqbOaXdwRX"
+        },
+        {
+            "name": "lvl1_slots_total",
+            "current": 4,
+            "max": "",
+            "id": "-MSzPh3Tb8i5RmZ9V6Q5"
+        },
+        {
+            "name": "lvl2_slots_total",
+            "current": 2,
+            "max": "",
+            "id": "-MSzPh3W3FPUOIosk7uv"
+        },
+        {
+            "name": "lvl3_slots_total",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh3YE1jD8-eyWDDo"
+        },
+        {
+            "name": "lvl4_slots_total",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh3_lYh0aHTG0lI8"
+        },
+        {
+            "name": "lvl5_slots_total",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh3cQTdOTp25OoT2"
+        },
+        {
+            "name": "lvl6_slots_total",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh3eQpwU_4bccE6C"
+        },
+        {
+            "name": "lvl7_slots_total",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh3gVN2Znz1YV0Ai"
+        },
+        {
+            "name": "lvl8_slots_total",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh3hIqtDfpracEOx"
+        },
+        {
+            "name": "lvl9_slots_total",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh3kdn0o9e25-3zP"
+        },
+        {
+            "name": "honor_save_bonus",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh4bdTaERsOpULNz"
+        },
+        {
+            "name": "sanity_save_bonus",
+            "current": 0,
+            "max": "",
+            "id": "-MSzPh4dw39GUWhC53MX"
+        },
+        {
+            "name": "death_save_roll",
+            "current": "@{wtype}&{template:simple} {{rname=^{death-save-u}}} {{mod=@{death_save_bonus}}} {{r1=[[@{d20}+@{death_save_bonus}@{pbd_safe}]]}} {{always=1}} {{r2=[[@{d20}+@{death_save_bonus}@{pbd_safe}]]}} {{global=@{global_save_mod}}} @{charname_output}",
+            "max": "",
+            "id": "-MSzPh5BeOZtkCB38cW0"
+        },
+        {
+            "name": "additional_feature_and_traits",
+            "current": "",
+            "max": "",
+            "id": "-MSz_9htY4Qgkar-WlL9"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_itemname",
+            "current": "Shortbow",
+            "max": "",
+            "id": "-MTDwIHA10ay4xHXdrDJ"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTDwIHDrLQqqRsD7omq"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_itemproperties",
+            "current": "Ammunition, Range, Two-Handed",
+            "max": "",
+            "id": "-MTDwIHGj8TZ1ogwuT2q"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_itemweight",
+            "current": "2",
+            "max": "",
+            "id": "-MTDwIHIh7ALY-fzULGb"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_itemcontent",
+            "current": "Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\n\nIf you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see \"Improvised Weapons\" later in the section). A sling must be loaded to deal any damage when used in this way.\n\n",
+            "max": "",
+            "id": "-MTDwIHMeDM4GUblcLCV"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_itemmodifiers",
+            "current": "Item Type: Ranged Weapon, Damage: 1d6, Damage Type: Piercing, Range: 80/320,Critical Range: 20,Critical Range: 20,Critical Range: 20",
+            "max": "",
+            "id": "-MTDwIHOMLnog7xNmhrI"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_hasattack",
+            "current": 1,
+            "max": "",
+            "id": "-MTDwIHQHCHNm34eYTE7"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDwIHSqAjeTnq7Tf7f"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_itemattackid",
+            "current": "-MTDwIHWeMJXjxrf6afW",
+            "max": "",
+            "id": "-MTDwIHm0XOnCpZxu_Ga"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTDwIHtbJDOwiCqC0C_"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_itemid",
+            "current": "-MTDwIH04upIqeh4PsOZ",
+            "max": "",
+            "id": "-MTDwIHxiUu3trlyP6RG"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_atkname",
+            "current": "Shortbow",
+            "max": "",
+            "id": "-MTDwII-16eEjUuP2FoM"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_dmgbase",
+            "current": "1d6",
+            "max": "",
+            "id": "-MTDwII2Bi169goerG0c"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_dmgtype",
+            "current": "Piercing",
+            "max": "",
+            "id": "-MTDwII4oZYdZJX2TN99"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_atkrange",
+            "current": "80/320",
+            "max": "",
+            "id": "-MTDwII8Svrnp32uozyI"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_atkattr_base",
+            "current": "@{dexterity_mod}",
+            "max": "",
+            "id": "-MTDwIIBmWlVqbzq0L3_"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_dmgattr",
+            "current": "@{dexterity_mod}",
+            "max": "",
+            "id": "-MTDwIIERic4v2Rxz6E7"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_atkmagic",
+            "current": "",
+            "max": "",
+            "id": "-MTDwIIK2qu28k78MspP"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_atkdmgtype",
+            "current": "1d6+3 Piercing ",
+            "max": "",
+            "id": "-MTDwIIg-5FFaKoukkAS"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_rollbase_dmg",
+            "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d6 + 3[DEX]]]}} {{dmg1type=Piercing}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+            "max": "",
+            "id": "-MTDwIIjc8TbvWsntQ9o"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_rollbase_crit",
+            "current": "@{wtype}&{template:dmg} {{crit=1}} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d6 + 3[DEX]]]}} {{dmg1type=Piercing}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[1d6]]}} {{crit2=[[0]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+            "max": "",
+            "id": "-MTDwIInkswU_M7c4Qk6"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_atkbonus",
+            "current": "+5",
+            "max": "",
+            "id": "-MTDwIIqivrIVYn143U7"
+        },
+        {
+            "name": "repeating_attack_-MTDwIHWeMJXjxrf6afW_rollbase",
+            "current": "@{wtype}&{template:atkdmg} {{mod=@{atkbonus}}} {{rname=@{atkname}}} {{r1=[[@{d20}cs>@{atkcritrange} + 3[DEX] + 2[PROF]]]}} @{rtype}cs>@{atkcritrange} + 3[DEX] + 2[PROF]]]}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d6 + 3[DEX]]]}} {{dmg1type=Piercing}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[1d6[CRIT]]]}} {{crit2=[[0[CRIT]]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globalattack=@{global_attack_mod}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} ammo=@{ammo} @{charname_output}",
+            "max": "",
+            "id": "-MTDwIIvQenn9l6vjY1t"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_itemname",
+            "current": "Arrows",
+            "max": "",
+            "id": "-MTDwuCK-GJ9XcI5UI89"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_itemcount",
+            "current": "81",
+            "max": "",
+            "id": "-MTDwuCNeK7JGJQmN-Gq"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDwuCQ275wk8M_Lh2V"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_itemweight",
+            "current": "0.05",
+            "max": "",
+            "id": "-MTDwuCSiBDHrFqX7awV"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_itemcontent",
+            "current": "Ammunition: You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack. At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.\n\n",
+            "max": "",
+            "id": "-MTDwuCUHe3YzGHZxV-p"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_itemmodifiers",
+            "current": "Item Type: Ammunition",
+            "max": "",
+            "id": "-MTDwuCXOHm-1Hjs7L5o"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDwuC_fkreLxfH0R53"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_useasresource",
+            "current": 1,
+            "max": "",
+            "id": "-MTDwuCbAEEzNLExwrQg"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_itemresourceid",
+            "current": "other_resource",
+            "max": "",
+            "id": "-MTDwuCsRbOTiMJ5eDLN"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_itemname",
+            "current": "Backpack",
+            "max": "",
+            "id": "-MTDx2_-i1ziPvK9rIjq"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTDx2_1qDrOEvdwDl70"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDx2_4uAafVHmiFtGs"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_itemweight",
+            "current": "5",
+            "max": "",
+            "id": "-MTDx2_6aXq8AeOhtuOY"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_itemcontent",
+            "current": "A backpack can hold one cubic foot or 30 pounds of gear. You can also strap items, such as a bedroll or a coil of rope, to the outside of a backpack.\n\n",
+            "max": "",
+            "id": "-MTDx2_8iR7UftWHp1rp"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDx2_AowUt8dlCS1Kj"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDx2_CsfngmcAE8Snd"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDx2_EIioIHu9s3oQa"
+        },
+        {
+            "name": "repeating_inventory_-MTDx63iryObNfUP889K_itemname",
+            "current": "Bedroll",
+            "max": "",
+            "id": "-MTDx63or0vK_dV8j_oW"
+        },
+        {
+            "name": "repeating_inventory_-MTDx63iryObNfUP889K_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTDx63rpXUtEtXat5G6"
+        },
+        {
+            "name": "repeating_inventory_-MTDx63iryObNfUP889K_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDx63tKuZGfLyZH7ZE"
+        },
+        {
+            "name": "repeating_inventory_-MTDx63iryObNfUP889K_itemweight",
+            "current": "7",
+            "max": "",
+            "id": "-MTDx64-69RT1sI-NYn3"
+        },
+        {
+            "name": "repeating_inventory_-MTDx63iryObNfUP889K_itemcontent",
+            "current": "",
+            "max": "",
+            "id": "-MTDx641qjK3PWyV9dAq"
+        },
+        {
+            "name": "repeating_inventory_-MTDx63iryObNfUP889K_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDx643govxjhU0GRwX"
+        },
+        {
+            "name": "repeating_inventory_-MTDx63iryObNfUP889K_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDx6451YpI2AlPplsB"
+        },
+        {
+            "name": "repeating_inventory_-MTDx63iryObNfUP889K_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDx6475TFei9TNCi5a"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_itemname",
+            "current": "Fishing tackle",
+            "max": "",
+            "id": "-MTDxahO_UPV0dSiVe6P"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_itemcount",
+            "current": "2",
+            "max": "",
+            "id": "-MTDxahRDTIpi8r5cnuQ"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDxahTv27OC2n3tYS7"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_itemweight",
+            "current": "4",
+            "max": "",
+            "id": "-MTDxahVlSAMyP7VCn84"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_itemcontent",
+            "current": "This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.",
+            "max": "",
+            "id": "-MTDxahZWeKKEGszceOl"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDxahaJvLdaB45IwYY"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDxahdwXSmjNHEUWeA"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDxahgSheLAqly_713"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_itemname",
+            "current": "Steel mirror",
+            "max": "",
+            "id": "-MTDxp7EMcvcbZ5fMpyE"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTDxp7J8trmLj1hzhIt"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDxp7L8OOJ83ccRZpD"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_itemweight",
+            "current": "0.5",
+            "max": "",
+            "id": "-MTDxp7PBp6PnwA9euEn"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_itemcontent",
+            "current": "",
+            "max": "",
+            "id": "-MTDxp7VhF_EMNiwuf3h"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDxp7Zw4UfjRdbdn1u"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDxp7bzdQVIGLKtL1a"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDxp7exq-WXsM6zgr3"
+        },
+        {
+            "name": "repeating_inventory_-MTDxxP1PqlPHXoKvwbs_itemname",
+            "current": "Quiver",
+            "max": "",
+            "id": "-MTDxxP8QjnwbBbCxE0W"
+        },
+        {
+            "name": "repeating_inventory_-MTDxxP1PqlPHXoKvwbs_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTDxxPBTcUfD0hrnBMJ"
+        },
+        {
+            "name": "repeating_inventory_-MTDxxP1PqlPHXoKvwbs_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDxxPE5XDroVvxaKQ1"
+        },
+        {
+            "name": "repeating_inventory_-MTDxxP1PqlPHXoKvwbs_itemweight",
+            "current": "1",
+            "max": "",
+            "id": "-MTDxxPFQxuGXQwSzgef"
+        },
+        {
+            "name": "repeating_inventory_-MTDxxP1PqlPHXoKvwbs_itemcontent",
+            "current": "A quiver can hold up to 20 arrows.\n\n",
+            "max": "",
+            "id": "-MTDxxPI1WmdVYqdnaXF"
+        },
+        {
+            "name": "repeating_inventory_-MTDxxP1PqlPHXoKvwbs_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDxxPKiZ8Cg58Ubl_2"
+        },
+        {
+            "name": "repeating_inventory_-MTDxxP1PqlPHXoKvwbs_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDxxPQfm6rxbwJc87t"
+        },
+        {
+            "name": "repeating_inventory_-MTDxxP1PqlPHXoKvwbs_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDxxPUwXludV830cbQ"
+        },
+        {
+            "name": "repeating_inventory_-MTDy4Jv4wEU4nzti2Ck_itemname",
+            "current": "Rations",
+            "max": "",
+            "id": "-MTDy4K2EDLJYpanX289"
+        },
+        {
+            "name": "repeating_inventory_-MTDy4Jv4wEU4nzti2Ck_itemcount",
+            "current": "10",
+            "max": "",
+            "id": "-MTDy4K4ChEltg5iCHA-"
+        },
+        {
+            "name": "repeating_inventory_-MTDy4Jv4wEU4nzti2Ck_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDy4K6sFVE7_Rj8ecE"
+        },
+        {
+            "name": "repeating_inventory_-MTDy4Jv4wEU4nzti2Ck_itemweight",
+            "current": "2",
+            "max": "",
+            "id": "-MTDy4K8VxAu7DXjOUK3"
+        },
+        {
+            "name": "repeating_inventory_-MTDy4Jv4wEU4nzti2Ck_itemcontent",
+            "current": "Rations consist of dry foods suitable for extended travel, including jerky, dried fruit, hardtack, and nuts.",
+            "max": "",
+            "id": "-MTDy4KC0DV7MvpCi4Pf"
+        },
+        {
+            "name": "repeating_inventory_-MTDy4Jv4wEU4nzti2Ck_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDy4KEoRAejqpoEdBf"
+        },
+        {
+            "name": "repeating_inventory_-MTDy4Jv4wEU4nzti2Ck_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDy4KH430G2xPg-4Xj"
+        },
+        {
+            "name": "repeating_inventory_-MTDy4Jv4wEU4nzti2Ck_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDy4KJgx_7vXkDadIi"
+        },
+        {
+            "name": "repeating_inventory_-MTDyCSBRgdOI6ZR0q5N_itemname",
+            "current": "Hempen rope (50ft)",
+            "max": "",
+            "id": "-MTDyCSHVIq_mBL0O73L"
+        },
+        {
+            "name": "repeating_inventory_-MTDyCSBRgdOI6ZR0q5N_itemcount",
+            "current": "2",
+            "max": "",
+            "id": "-MTDyCSK49Nm1KSNoMhx"
+        },
+        {
+            "name": "repeating_inventory_-MTDyCSBRgdOI6ZR0q5N_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDyCSMgPRfpHRgm19f"
+        },
+        {
+            "name": "repeating_inventory_-MTDyCSBRgdOI6ZR0q5N_itemweight",
+            "current": "10",
+            "max": "",
+            "id": "-MTDyCSOUNjZ1rSImqOG"
+        },
+        {
+            "name": "repeating_inventory_-MTDyCSBRgdOI6ZR0q5N_itemcontent",
+            "current": "Rope, whether made of hemp or silk, has 2 hit points and can be burst with a DC 17 Strength check.\n",
+            "max": "",
+            "id": "-MTDyCSUC12bVyRZRQe2"
+        },
+        {
+            "name": "repeating_inventory_-MTDyCSBRgdOI6ZR0q5N_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDyCSWY1pQIv97PKga"
+        },
+        {
+            "name": "repeating_inventory_-MTDyCSBRgdOI6ZR0q5N_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyCS_GJcrTMoaikDZ"
+        },
+        {
+            "name": "repeating_inventory_-MTDyCSBRgdOI6ZR0q5N_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyCSdAXFgjWLaLRlo"
+        },
+        {
+            "name": "repeating_inventory_-MTDyN5tYndfOfeH7cau_itemname",
+            "current": "Tinderbox",
+            "max": "",
+            "id": "-MTDyN5yOMJceCbccWaM"
+        },
+        {
+            "name": "repeating_inventory_-MTDyN5tYndfOfeH7cau_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTDyN61BKazokREhn9l"
+        },
+        {
+            "name": "repeating_inventory_-MTDyN5tYndfOfeH7cau_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDyN63p0fpZR6kumL5"
+        },
+        {
+            "name": "repeating_inventory_-MTDyN5tYndfOfeH7cau_itemweight",
+            "current": "1",
+            "max": "",
+            "id": "-MTDyN65sEBqY-D61ZR2"
+        },
+        {
+            "name": "repeating_inventory_-MTDyN5tYndfOfeH7cau_itemcontent",
+            "current": "This small container holds flint, fire steel, and tinder (usually dry cloth soaked in light oil) used to kindle a fire. Using it to light a torch - or anything else with abundant, exposed fuel - takes an action. Lighting any other fire takes 1 minute.\n\n",
+            "max": "",
+            "id": "-MTDyN677jJRGTZtwFPu"
+        },
+        {
+            "name": "repeating_inventory_-MTDyN5tYndfOfeH7cau_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDyN69hZL-6Bmgk8Tp"
+        },
+        {
+            "name": "repeating_inventory_-MTDyN5tYndfOfeH7cau_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyN6BSmZcMism3zlc"
+        },
+        {
+            "name": "repeating_inventory_-MTDyN5tYndfOfeH7cau_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyN6D-yzWVjKC4OPi"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_itemname",
+            "current": "Torch",
+            "max": "",
+            "id": "-MTDyQdcmgGW1kT3Ya3M"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_itemcount",
+            "current": "10",
+            "max": "",
+            "id": "-MTDyQdeAK4KsBt1hLW4"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDyQdipXMKrr1np-g7"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_itemweight",
+            "current": "1",
+            "max": "",
+            "id": "-MTDyQdlTAAPtrhuFrl2"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_itemcontent",
+            "current": "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.\n\n",
+            "max": "",
+            "id": "-MTDyQdnWwKL3YxeNtOd"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_itemmodifiers",
+            "current": "Item Type: Adventuring Gear, Damage: 1, Damage Type: Fire, Range: 20/40",
+            "max": "",
+            "id": "-MTDyQdpX6WUTx0A_TZl"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyQdssf06H-8D2xQP"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyQdyzG4YcCv8R2cY"
+        },
+        {
+            "name": "repeating_inventory_-MTDyX8lTZqYSbIfr2uW_itemname",
+            "current": "Clockwork Toy",
+            "max": "",
+            "id": "-MTDyX8tp4TowWgolaZw"
+        },
+        {
+            "name": "repeating_inventory_-MTDyX8lTZqYSbIfr2uW_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTDyX8w0JIYtxDGZLBn"
+        },
+        {
+            "name": "repeating_inventory_-MTDyX8lTZqYSbIfr2uW_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDyX8zcTx5LQlNhJFA"
+        },
+        {
+            "name": "repeating_inventory_-MTDyX8lTZqYSbIfr2uW_itemweight",
+            "current": "5",
+            "max": "",
+            "id": "-MTDyX901AnI_NYz-FbA"
+        },
+        {
+            "name": "repeating_inventory_-MTDyX8lTZqYSbIfr2uW_itemcontent",
+            "current": "A waterskin can hold up to 4 pints of liquid.\n\n",
+            "max": "",
+            "id": "-MTDyX92JpEUIUVJ5zu0"
+        },
+        {
+            "name": "repeating_inventory_-MTDyX8lTZqYSbIfr2uW_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDyX96nwC4nbmCu6Ef"
+        },
+        {
+            "name": "repeating_inventory_-MTDyX8lTZqYSbIfr2uW_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyX98aIy2l0azZf0U"
+        },
+        {
+            "name": "repeating_inventory_-MTDyX8lTZqYSbIfr2uW_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyX9BE93bXeRFlZx8"
+        },
+        {
+            "name": "repeating_inventory_-MTDyoPeE5TGlRpUhUE3_itemname",
+            "current": "Block and tackle",
+            "max": "",
+            "id": "-MTDyoPjBybNt22bykls"
+        },
+        {
+            "name": "repeating_inventory_-MTDyoPeE5TGlRpUhUE3_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTDyoPoAv01xogHVmts"
+        },
+        {
+            "name": "repeating_inventory_-MTDyoPeE5TGlRpUhUE3_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTDyoPseHqTHNRmh_lm"
+        },
+        {
+            "name": "repeating_inventory_-MTDyoPeE5TGlRpUhUE3_itemweight",
+            "current": "5",
+            "max": "",
+            "id": "-MTDyoPvww27A35jqeu0"
+        },
+        {
+            "name": "repeating_inventory_-MTDyoPeE5TGlRpUhUE3_itemcontent",
+            "current": "A set of pulleys with a cable threaded through them and a hook to attach to Objects, a block and tackle allows you to hoist up to four times the weight you can normally lift.",
+            "max": "",
+            "id": "-MTDyoPyFiqxxnkYYFcO"
+        },
+        {
+            "name": "repeating_inventory_-MTDyoPeE5TGlRpUhUE3_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTDyoQ0fI94p1R3Bo0I"
+        },
+        {
+            "name": "repeating_inventory_-MTDyoPeE5TGlRpUhUE3_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyoQ3pBgdBcXSeQJx"
+        },
+        {
+            "name": "repeating_inventory_-MTDyoPeE5TGlRpUhUE3_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTDyoQ7ffNYxPWPu0C-"
+        },
+        {
+            "name": "repeating_inventory_-MTE-dptvaj4PK-UHhDx_itemname",
+            "current": "Ink",
+            "max": "",
+            "id": "-MTE-dq0GNGl8tVSVSGM"
+        },
+        {
+            "name": "repeating_inventory_-MTE-dptvaj4PK-UHhDx_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTE-dq3k8Z3idWp0Oud"
+        },
+        {
+            "name": "repeating_inventory_-MTE-dptvaj4PK-UHhDx_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTE-dq7T29yxBTTN5JX"
+        },
+        {
+            "name": "repeating_inventory_-MTE-dptvaj4PK-UHhDx_itemweight",
+            "current": 0,
+            "max": "",
+            "id": "-MTE-dq9alE1UtbdKksO"
+        },
+        {
+            "name": "repeating_inventory_-MTE-dptvaj4PK-UHhDx_itemcontent",
+            "current": "",
+            "max": "",
+            "id": "-MTE-dqCmgoL_U8fW99y"
+        },
+        {
+            "name": "repeating_inventory_-MTE-dptvaj4PK-UHhDx_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTE-dqHovFOTc-4ZvMG"
+        },
+        {
+            "name": "repeating_inventory_-MTE-dptvaj4PK-UHhDx_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTE-dqMgAD8hZ_AlOoZ"
+        },
+        {
+            "name": "repeating_inventory_-MTE-dptvaj4PK-UHhDx_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTE-dqOpCz8PPwEwlQr"
+        },
+        {
+            "name": "repeating_inventory_-MTE-kxz6tVfVzGtaSqw_itemname",
+            "current": "Ink pen",
+            "max": "",
+            "id": "-MTE-ky5W4DmdbQ0kGYp"
+        },
+        {
+            "name": "repeating_inventory_-MTE-kxz6tVfVzGtaSqw_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTE-kyBJ4xJo_vRPsR2"
+        },
+        {
+            "name": "repeating_inventory_-MTE-kxz6tVfVzGtaSqw_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTE-kyESdncGPyh2iev"
+        },
+        {
+            "name": "repeating_inventory_-MTE-kxz6tVfVzGtaSqw_itemweight",
+            "current": 0,
+            "max": "",
+            "id": "-MTE-kyGpAO444rZLLdV"
+        },
+        {
+            "name": "repeating_inventory_-MTE-kxz6tVfVzGtaSqw_itemcontent",
+            "current": "",
+            "max": "",
+            "id": "-MTE-kyJAFm1SF3BDuUz"
+        },
+        {
+            "name": "repeating_inventory_-MTE-kxz6tVfVzGtaSqw_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTE-kyKLCc1VEZHIg-m"
+        },
+        {
+            "name": "repeating_inventory_-MTE-kxz6tVfVzGtaSqw_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTE-kyM0eUw08Q3bLUL"
+        },
+        {
+            "name": "repeating_inventory_-MTE-kxz6tVfVzGtaSqw_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTE-kyPEul66IH-dJUV"
+        },
+        {
+            "name": "repeating_inventory_-MTE-svoQp0RREjwey3n_itemname",
+            "current": "Common clothes",
+            "max": "",
+            "id": "-MTE-svt0l-hKrqJPPsN"
+        },
+        {
+            "name": "repeating_inventory_-MTE-svoQp0RREjwey3n_itemcount",
+            "current": 1,
+            "max": "",
+            "id": "-MTE-svz65pM7rnHzUrf"
+        },
+        {
+            "name": "repeating_inventory_-MTE-svoQp0RREjwey3n_itemproperties",
+            "current": "",
+            "max": "",
+            "id": "-MTE-sw1IqAMUBSCvsa7"
+        },
+        {
+            "name": "repeating_inventory_-MTE-svoQp0RREjwey3n_itemweight",
+            "current": "3",
+            "max": "",
+            "id": "-MTE-sw3C6scaacsXJO7"
+        },
+        {
+            "name": "repeating_inventory_-MTE-svoQp0RREjwey3n_itemcontent",
+            "current": "",
+            "max": "",
+            "id": "-MTE-sw50zVGmP_1-7KG"
+        },
+        {
+            "name": "repeating_inventory_-MTE-svoQp0RREjwey3n_itemmodifiers",
+            "current": "Item Type: Adventuring Gear",
+            "max": "",
+            "id": "-MTE-sw71eJlDdJn5DLH"
+        },
+        {
+            "name": "repeating_inventory_-MTE-svoQp0RREjwey3n_hasattack",
+            "current": 0,
+            "max": "",
+            "id": "-MTE-swB36gLpb0McWpd"
+        },
+        {
+            "name": "repeating_inventory_-MTE-svoQp0RREjwey3n_useasresource",
+            "current": 0,
+            "max": "",
+            "id": "-MTE-swD0RhNtx6DbMun"
+        },
+        {
+            "name": "age",
+            "current": "200",
+            "max": "",
+            "id": "-MTE09YZrnc9xeAsWGgN"
+        },
+        {
+            "name": "height",
+            "current": "4\"0\"",
+            "max": "",
+            "id": "-MTE0DonK5y8Unvv3p1g"
+        },
+        {
+            "name": "weight",
+            "current": "35lbs",
+            "max": "",
+            "id": "-MTE0GuLL3HUton27Ape"
+        },
+        {
+            "name": "eyes",
+            "current": "Silver",
+            "max": "",
+            "id": "-MTE0J0YTfq2zfVKFnGb"
+        },
+        {
+            "name": "skin",
+            "current": "Fair",
+            "max": "",
+            "id": "-MTE0LzizhGgkcqQiCPf"
+        },
+        {
+            "name": "hair",
+            "current": "Dark Gray - Scraggly",
+            "max": "",
+            "id": "-MTE0NM2KEYqYAUghzmP"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellname",
+            "current": "Psychic Hammer",
+            "max": "",
+            "id": "-MTE1S6auXNaWq40yntI"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellschool",
+            "current": "illusion",
+            "max": "",
+            "id": "-MTE1T2yF0UvZ6MdT5mI"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spelldescription",
+            "current": "As an action, you try to grasp one creature you  can see within 120 feet of you, with a hand  crafted from telekinetic energy. The target must  succeed on a Strength saving throw or take 1d6  force damage. If it takes any of this damage and is Large or smaller, you can move it up to 10 feet  in a straight line in a direction of your choice.  You can’t lift the target off the ground unless it is  already airborne or underwater.",
+            "max": "",
+            "id": "-MTE1dPfshP8_gtM9bfD"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE1hI8ZcdSwytGk2cJ"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE1hPA6dFff41Gjp_B"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE1hVn1ftLBmyt8kGJ"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellrange",
+            "current": "120",
+            "max": "",
+            "id": "-MTE1ib2Nzh1410J-SBx"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellathigherlevels",
+            "current": "The talent’s damage increases by 1d6 when  you reach 5th level (2d6), 11th level (3d6), and  17th level (4d6)",
+            "max": "",
+            "id": "-MTE1m8af9nfxKbFe4P8"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE1m93d63OJuMP9dub"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_rollcontent",
+            "current": "%{-MSTmAtz8dyPwLV_v8Dp|repeating_attack_-MTEPWvq8xDCyl0ydqYJ_attack}",
+            "max": "",
+            "id": "-MTE1mBmLaHGghKd1pPx"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1tQdim1Vg1axhd1P_spellname",
+            "current": "Diminution - Psychic Focus",
+            "max": "",
+            "id": "-MTE20CJRXu3uknTgoyL"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1tQdim1Vg1axhd1P_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE20IpIp1RZIj7GQF9"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1tQdim1Vg1axhd1P_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE20PY5-scSy0KXGpt"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1tQdim1Vg1axhd1P_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE20WO-Ca915kplgDu"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1tQdim1Vg1axhd1P_spelldescription",
+            "current": "While focused on this  discipline, you have advantage on Dexterity  (Stealth) checks",
+            "max": "",
+            "id": "-MTE25QZPhrnTK7itVf3"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1tQdim1Vg1axhd1P_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE25Qvibx-IH9Oer5j"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2JDcUJJzZrVuoSH-_spellname",
+            "current": "Nomadic\tArrow - Psychic Focus",
+            "max": "",
+            "id": "-MTE2LPRWKZBU2snd1_E"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2JDcUJJzZrVuoSH-_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE2LPgz71v57lAl5Fx"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2JDcUJJzZrVuoSH-_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE2Lhdb_wSfuzU2-Yo"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2JDcUJJzZrVuoSH-_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE2LoRFVUVIchrXyll"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2JDcUJJzZrVuoSH-_spelldescription",
+            "current": "While you are focused on this  discipline, any attack roll you make for a ranged  weapon attack ignores disadvantage. If  disadvantage would normally apply to the roll,  that roll also can’t benefit from advantage.",
+            "max": "",
+            "id": "-MTE2PylEYEw1fIdBGSx"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2JDcUJJzZrVuoSH-_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE2Pz8yXOmBf8yMg_j"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2QQVBj4Gq1VZqlZ3_spellname",
+            "current": "Psionic Restoration - Psychic Focus",
+            "max": "",
+            "id": "-MTE2Ud67lQhLaVhXQVY"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2QQVBj4Gq1VZqlZ3_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE2YVySfRmILIgzoTt"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2QQVBj4Gq1VZqlZ3_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE2YddMtUXNhfFBzIo"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2QQVBj4Gq1VZqlZ3_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE2YkcFS7QveQBdhkQ"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2QQVBj4Gq1VZqlZ3_spelldescription",
+            "current": "While focused on this  discipline, you can use a bonus action to touch a  creature that has 0 hit points and stabilize it.",
+            "max": "",
+            "id": "-MTE2aNEe0SUh_wpKaZZ"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE2QQVBj4Gq1VZqlZ3_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE2bpgVOb6ETbZeAFH"
+        },
+        {
+            "name": "repeating_spell-1_-MTE3c5G69fr6uZYMPeX_spellname",
+            "current": "Mend Wounds  (1–7 psi)",
+            "max": "",
+            "id": "-MTE3f7TIc3Ufk0p_Vz8"
+        },
+        {
+            "name": "repeating_spell-1_-MTE3c5G69fr6uZYMPeX_spelldescription",
+            "current": "As an action, you can  spend psi points to restore hit points to one  creature you touch. The creature regains 1d8 hit  points per psi point spent.",
+            "max": "",
+            "id": "-MTE3kqcaVUbFtGafywu"
+        },
+        {
+            "name": "repeating_spell-1_-MTE3c5G69fr6uZYMPeX_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE3kxf-ie9uXhE-icx"
+        },
+        {
+            "name": "repeating_spell-1_-MTE3c5G69fr6uZYMPeX_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE3l2jWkl23nFFIUYh"
+        },
+        {
+            "name": "repeating_spell-1_-MTE3c5G69fr6uZYMPeX_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE3lAiSFN11S9ypOLl"
+        },
+        {
+            "name": "repeating_spell-1_-MTE3c5G69fr6uZYMPeX_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE3nYvP3CZYHRnfURg"
+        },
+        {
+            "name": "repeating_spell-3_-MTE3qoEskydTiebs2LR_spellname",
+            "current": "Restore Health (3 psi)",
+            "max": "",
+            "id": "-MTE3s5gFEn3SH5R10nm"
+        },
+        {
+            "name": "repeating_spell-3_-MTE3qoEskydTiebs2LR_spelldescription",
+            "current": "As an action, you touch  one creature and remove one of the following  conditions from it: blinded, deafened, paralyzed,  or poisoned. Alternatively, you remove one  disease from the creature",
+            "max": "",
+            "id": "-MTE3xL6wbhFRC4YFCpO"
+        },
+        {
+            "name": "repeating_spell-3_-MTE3qoEskydTiebs2LR_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE3xSI2hOhNuExE65M"
+        },
+        {
+            "name": "repeating_spell-3_-MTE3qoEskydTiebs2LR_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE3xYGsOranaSZKcyl"
+        },
+        {
+            "name": "repeating_spell-3_-MTE3qoEskydTiebs2LR_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE3xdeqQEP51KwooMH"
+        },
+        {
+            "name": "repeating_spell-3_-MTE3qoEskydTiebs2LR_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE3xy3d6rqwS1AR5JU"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4-aZeE1QmTF2ZP6g_spellname",
+            "current": "Restore Life (5 Psi)",
+            "max": "",
+            "id": "-MTE42LvOsW0W964z-p5"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4-aZeE1QmTF2ZP6g_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE42SsA8lVGk_wap2O"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4-aZeE1QmTF2ZP6g_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE42ZNIF4V3PKMNTVN"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4-aZeE1QmTF2ZP6g_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE42fCOcarqzbljVdK"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4-aZeE1QmTF2ZP6g_spelldescription",
+            "current": "As an action, you touch  one creature that has died within the last  minute. The creature returns to life with 1 hit  point. This ability can’t return to life a creature that has died of old age, nor can it restore a  creature missing any vital body parts",
+            "max": "",
+            "id": "-MTE47uSzEokC0AAIfVz"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4-aZeE1QmTF2ZP6g_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE47urEQ2rfISo6Tnx"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4AugdFzjHFov6BMQ_spellname",
+            "current": "Restore Vigor (7 Psi)",
+            "max": "",
+            "id": "-MTE4CcpqpLNGKwnvQeg"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4AugdFzjHFov6BMQ_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4Cd3T8C53P2nEUpY"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4AugdFzjHFov6BMQ_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4CjN60hnWQv4frLO"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4AugdFzjHFov6BMQ_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4Cpuwe1TQyhPxOou"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4AugdFzjHFov6BMQ_spelldescription",
+            "current": "As an action, you can  touch one creature and choose one of the  following: remove any reductions to one of its  ability scores, remove one effect that reduces its hit point maximum, or reduce its exhaustion  level by one.",
+            "max": "",
+            "id": "-MTE4FEqnslLKBGg67tp"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4AugdFzjHFov6BMQ_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4GmsL8IyIvKPK-WJ"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4LGLgPZIxcLr1XO4_spellname",
+            "current": "Miniature\tForm (2 psi)",
+            "max": "",
+            "id": "-MTE4NqXAKD5lWvB64X2"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4LGLgPZIxcLr1XO4_spellduration",
+            "current": "10 min",
+            "max": "",
+            "id": "-MTE4P4eI0ONeo-w-Dfy"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4LGLgPZIxcLr1XO4_spellconcentration",
+            "current": "{{concentration=1}}",
+            "max": "",
+            "id": "-MTE4QcmzonFO4d6Yr5m"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4LGLgPZIxcLr1XO4_spelldescription",
+            "current": "As a  bonus action, you become Tiny until your  concentration ends. While this size, you gain a +5  bonus to Dexterity (Stealth) checks and can  move through gaps up to 6 inches across without  squeezing",
+            "max": "",
+            "id": "-MTE4SO0TzCwfKCqK-vo"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4LGLgPZIxcLr1XO4_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4Tc4qr14GRakRXk4"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4LGLgPZIxcLr1XO4_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4W-19ob0ndE-Juxt"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4LGLgPZIxcLr1XO4_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4W5irtZ6wDNF9_li"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4LGLgPZIxcLr1XO4_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4WJlVBMiKRZ1lVyX"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4YcxLs7Y7KJjajZM_spellname",
+            "current": "Toppling\tShift (2 psi)",
+            "max": "",
+            "id": "-MTE4_Aj44jFi18O-jpj"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4YcxLs7Y7KJjajZM_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4_EfxBbkbtC4V6WW"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4YcxLs7Y7KJjajZM_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4_OFbZ1QY2JX863V"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4YcxLs7Y7KJjajZM_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4_V4QfTdgfcNv1hR"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4YcxLs7Y7KJjajZM_spelldescription",
+            "current": "As a bonus action, you  shift to an incredibly small size and then  suddenly return to normal, sending an opponent  flying backward. Choose one creature you can  see within 5 feet of you. It must succeed on a  Strength saving throw or be knocked prone.",
+            "max": "",
+            "id": "-MTE4d_xmoj6WQKp0RoA"
+        },
+        {
+            "name": "repeating_spell-2_-MTE4YcxLs7Y7KJjajZM_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4daSFpjdhB2UYyzi"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4iAhsIacfY5TK16J_spellname",
+            "current": "Sudden Shift (5 Psi)",
+            "max": "",
+            "id": "-MTE4kEIZf1xT5ru-PNQ"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4iAhsIacfY5TK16J_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4kL4xeoGVwFqpvhf"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4iAhsIacfY5TK16J_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4kY68Pf1yghq8DZ9"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4iAhsIacfY5TK16J_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4kfxrnRsYNiISBWT"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4iAhsIacfY5TK16J_spelldescription",
+            "current": "As a reaction when you  are hit by an attack, you shift down to minute  size to avoid the attack. The attack misses, and  you move up to 5 feet without provoking  opportunity attacks before returning to normal  size.",
+            "max": "",
+            "id": "-MTE4msByWMKw2WLUGaP"
+        },
+        {
+            "name": "repeating_spell-5_-MTE4iAhsIacfY5TK16J_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4o70JRT2m_cko5Ox"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4qqgJk8-uTwPAGUY_spellname",
+            "current": "Microscopic Form (7 psi)",
+            "max": "",
+            "id": "-MTE4sJOd2dgdi5D8Vul"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4qqgJk8-uTwPAGUY_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4sJ_gsO3IIFvIvKV"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4qqgJk8-uTwPAGUY_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4sUCRqJbiOQZQTne"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4qqgJk8-uTwPAGUY_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4sdFXLZINyYzbcX8"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4qqgJk8-uTwPAGUY_spellconcentration",
+            "current": "{{concentration=1}}",
+            "max": "",
+            "id": "-MTE4sy0e2AgPRVoEkYt"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4qqgJk8-uTwPAGUY_spellduration",
+            "current": "10min",
+            "max": "",
+            "id": "-MTE4thZ2krZp1bnA8_5"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4qqgJk8-uTwPAGUY_spelldescription",
+            "current": "As a  bonus action, you become smaller than Tiny until your concentration ends. While this size,  you gain a +10 bonus to Dexterity (Stealth)  checks and a +5 bonus to AC, you can move  through gaps up to 1 inch across without  squeezing, and you can’t make weapon attacks",
+            "max": "",
+            "id": "-MTE4wQtivn3WO71IQcs"
+        },
+        {
+            "name": "repeating_spell-7_-MTE4qqgJk8-uTwPAGUY_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE4y3-9Pe08jHS3LoD"
+        },
+        {
+            "name": "repeating_spell-1_-MTE5589bLl80ZcawvTl_spellname",
+            "current": "Speed Dart (1–7 psi)",
+            "max": "",
+            "id": "-MTE56uKw0LMHgkwWq9p"
+        },
+        {
+            "name": "repeating_spell-1_-MTE5589bLl80ZcawvTl_spelldescription",
+            "current": "As a bonus action, you  imbue one ranged weapon you hold with psionic  power. The next attack you make with it that hits  before the end of the current turn deals an extra 1d10 psychic damage per psi point spent.",
+            "max": "",
+            "id": "-MTE59yAaTdTjl6Jg2x_"
+        },
+        {
+            "name": "repeating_spell-1_-MTE5589bLl80ZcawvTl_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE59yP5JZRAwzXHXqn"
+        },
+        {
+            "name": "repeating_spell-1_-MTE5589bLl80ZcawvTl_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5A4Q5KWsX2jp6FPG"
+        },
+        {
+            "name": "repeating_spell-1_-MTE5589bLl80ZcawvTl_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5AJln_iy3L3Ts44P"
+        },
+        {
+            "name": "repeating_spell-1_-MTE5589bLl80ZcawvTl_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5BfQgo4eKfz-cvGT"
+        },
+        {
+            "name": "repeating_spell-2_-MTE5F0JZLnfvSbuoAbJ_spellname",
+            "current": "Seeking Missile (2 psi)",
+            "max": "",
+            "id": "-MTE5HGxMtOxGN0aRzWE"
+        },
+        {
+            "name": "repeating_spell-2_-MTE5F0JZLnfvSbuoAbJ_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5HH9R6oHrOJW3d7S"
+        },
+        {
+            "name": "repeating_spell-2_-MTE5F0JZLnfvSbuoAbJ_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5HNf5a34wfb4c4WA"
+        },
+        {
+            "name": "repeating_spell-2_-MTE5F0JZLnfvSbuoAbJ_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5HiXBnjP2qJDXmkr"
+        },
+        {
+            "name": "repeating_spell-2_-MTE5F0JZLnfvSbuoAbJ_spelldescription",
+            "current": "As a reaction when  you miss with a ranged weapon attack, you can  repeat the attack roll against the same target.",
+            "max": "",
+            "id": "-MTE5LbMXu5TSULrYABG"
+        },
+        {
+            "name": "repeating_spell-2_-MTE5F0JZLnfvSbuoAbJ_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5LbkVAKHSzEt9-IE"
+        },
+        {
+            "name": "repeating_spell-5_-MTE5OigkFdcmCZwXLhs_spellname",
+            "current": "Faithful Archer (5 psi)",
+            "max": "",
+            "id": "-MTE5SLf0qBOIhCADOTm"
+        },
+        {
+            "name": "repeating_spell-5_-MTE5OigkFdcmCZwXLhs_spellconcentration",
+            "current": "{{concentration=1}}",
+            "max": "",
+            "id": "-MTE5STT7ELWwZRVjmOY"
+        },
+        {
+            "name": "repeating_spell-5_-MTE5OigkFdcmCZwXLhs_spellduration",
+            "current": "1 min",
+            "max": "",
+            "id": "-MTE5T06fjNbdXYqS8Wl"
+        },
+        {
+            "name": "repeating_spell-5_-MTE5OigkFdcmCZwXLhs_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5T0K4X1BLdrtkicw"
+        },
+        {
+            "name": "repeating_spell-5_-MTE5OigkFdcmCZwXLhs_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5TC348aYXEkLYqfY"
+        },
+        {
+            "name": "repeating_spell-5_-MTE5OigkFdcmCZwXLhs_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5TIZGonvs0QQiVAN"
+        },
+        {
+            "name": "repeating_spell-5_-MTE5OigkFdcmCZwXLhs_spelldescription",
+            "current": "As a  bonus action, you imbue a ranged weapon with a  limited sentience. Until your concentration ends,  you can make an extra attack with the weapon at  the start of each of your turns (no action  required). If it is a thrown weapon, it returns to  your grasp each time you make any attack with  it.",
+            "max": "",
+            "id": "-MTE5XD0T0CC-ta5D9bu"
+        },
+        {
+            "name": "repeating_spell-5_-MTE5OigkFdcmCZwXLhs_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE5XDMYlcB20kw0o1_"
+        },
+        {
+            "name": "repeating_traits_-MTE82SXod-wJ3X2wBZr_name",
+            "current": "Psychic\tFocus",
+            "max": "",
+            "id": "-MTE837hL9zGopJZT3SS"
+        },
+        {
+            "name": "repeating_traits_-MTE82SXod-wJ3X2wBZr_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MTE83PFTkWMYAcK0O73"
+        },
+        {
+            "name": "repeating_traits_-MTE82SXod-wJ3X2wBZr_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MTE8451XB7eGiES1-Tu"
+        },
+        {
+            "name": "repeating_traits_-MTE82SXod-wJ3X2wBZr_description",
+            "current": "You can focus psionic energy on one of your  psionic disciplines to draw ongoing benefits  from it. As a bonus action, you can choose one of  your psionic disciplines and gain its psychic  focus benefit, which is detailed in that  discipline’s description. The benefit lasts until  you are incapacitated or until you use another  bonus action to choose a different focus benefit. You can have only one psychic focus benefit at  a time, and using the psychic focus of one discipline doesn’t limit your ability to use other  disciplines.",
+            "max": "",
+            "id": "-MTE86hV_MhXS-m6Hc7W"
+        },
+        {
+            "name": "repeating_traits_-MTE82SXod-wJ3X2wBZr_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE8An487gdRjl2z3V9"
+        },
+        {
+            "name": "repeating_traits_-MTE8JMAEIOiiXoNFoIC_name",
+            "current": "Psionic Ability",
+            "max": "",
+            "id": "-MTE8JqDgbxUgAQnXM3i"
+        },
+        {
+            "name": "repeating_traits_-MTE8JMAEIOiiXoNFoIC_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MTE8K4Gl0fCDk6zW0nh"
+        },
+        {
+            "name": "repeating_traits_-MTE8JMAEIOiiXoNFoIC_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MTE8L8zVdCe7W8IyEco"
+        },
+        {
+            "name": "repeating_traits_-MTE8JMAEIOiiXoNFoIC_description",
+            "current": "Intelligence is your psionic ability for your  psionic disciplines. You use your Intelligence  modifier when setting the saving throw DC for a  psionic discipline or when making an attack roll  with one. \n\nDiscipline save DC = 8 + your proficiency bonus + your  Intelligence modifier\n\nDiscipline attack modifier = your proficiency bonus +  your Intelligence modifier",
+            "max": "",
+            "id": "-MTE8RVvft3zasvtIn0V"
+        },
+        {
+            "name": "repeating_traits_-MTE8JMAEIOiiXoNFoIC_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE8RWAvyoii8X2axjU"
+        },
+        {
+            "name": "repeating_traits_-MTE8YgV8XPPjj0ltWUE_name",
+            "current": "Psionic Talents",
+            "max": "",
+            "id": "-MTE8ZrYjCkmAuc-xRUC"
+        },
+        {
+            "name": "repeating_traits_-MTE8YgV8XPPjj0ltWUE_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MTE8_9tvaHaPsWcxBw_"
+        },
+        {
+            "name": "repeating_traits_-MTE8YgV8XPPjj0ltWUE_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MTE8_VKYmQVIZVjeLba"
+        },
+        {
+            "name": "repeating_traits_-MTE8YgV8XPPjj0ltWUE_description",
+            "current": "A psionic talent is a minor psionic effect you  have mastered. At 1st level, you know one psionic talent of your choice. You learn  additional talents of your choice at higher levels.  The Talents Known column of the Mystic table shows the total number of talents you know at  each level; when that number goes up for you,  choose a new talent.",
+            "max": "",
+            "id": "-MTE8e59dFCpqxoFHtUk"
+        },
+        {
+            "name": "repeating_traits_-MTE8YgV8XPPjj0ltWUE_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE8e5MLgn0f2qKe2jL"
+        },
+        {
+            "name": "repeating_traits_-MTE8g8WQll6dcvsjz9v_name",
+            "current": "Psionic Disciplines",
+            "max": "",
+            "id": "-MTE8hEsJ7bdDB3qtd2m"
+        },
+        {
+            "name": "repeating_traits_-MTE8g8WQll6dcvsjz9v_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MTE8hU55r9CIcTy0Bot"
+        },
+        {
+            "name": "repeating_traits_-MTE8g8WQll6dcvsjz9v_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MTE8hsLGnHYQlSQ9gZH"
+        },
+        {
+            "name": "repeating_traits_-MTE8g8WQll6dcvsjz9v_description",
+            "current": "A psionic discipline is a rigid set of mental  exercises that allows a mystic to manifest psionic  power. A mystic masters only a few disciplines at  a time. At 1st level, you know one psionic discipline of  your choice. The Disciplines Known column of  the Mystic table shows the total number of  disciplines you know at each level; when that  number goes up for you, choose a new discipline. In addition, whenever you gain a level in this  class, you can replace one discipline you know  with a different one of your choice.",
+            "max": "",
+            "id": "-MTE8q5JEMWlSY8LYOHd"
+        },
+        {
+            "name": "repeating_traits_-MTE8g8WQll6dcvsjz9v_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE8q5W4AY1sISYmW15"
+        },
+        {
+            "name": "repeating_traits_-MTE8tvC0nuqj9TP5Fhi_name",
+            "current": "Psi Points",
+            "max": "",
+            "id": "-MTE8v2Y-OyDlLMkH3oa"
+        },
+        {
+            "name": "repeating_traits_-MTE8tvC0nuqj9TP5Fhi_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MTE8vHl7AKzwsNEK2sm"
+        },
+        {
+            "name": "repeating_traits_-MTE8tvC0nuqj9TP5Fhi_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MTE8vbhZDs6z1K8TwoH"
+        },
+        {
+            "name": "repeating_traits_-MTE8tvC0nuqj9TP5Fhi_description",
+            "current": "You have an internal reservoir of energy that can  be devoted to psionic disciplines you know. This  energy is represented by psi points. Each psionic  discipline describes effects you can create with it  by spending a certain number of psi points. A  psionic talent requires no psi points. The number of psi points you have is based on  your mystic level, as shown in the Psi Points  column of the Mystic table. The number shown  for your level is your psi point maximum. Your  psi point total returns to its maximum when you  finish a long rest. The number of psi points you  have can’t go below 0 or over your maximum.",
+            "max": "",
+            "id": "-MTE8zR0OJzEQHUJ7z1L"
+        },
+        {
+            "name": "repeating_traits_-MTE8tvC0nuqj9TP5Fhi_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE8zRIGqhY0Xpa4s0n"
+        },
+        {
+            "name": "repeating_traits_-MTE922Y54ndp4V-urrm_name",
+            "current": "Psi Limit",
+            "max": "",
+            "id": "-MTE92YmRm9QoY8MpN63"
+        },
+        {
+            "name": "repeating_traits_-MTE922Y54ndp4V-urrm_source",
+            "current": "Class",
+            "max": "",
+            "id": "-MTE92s9GhdBkCZvAmIl"
+        },
+        {
+            "name": "repeating_traits_-MTE922Y54ndp4V-urrm_source_type",
+            "current": "Mystic",
+            "max": "",
+            "id": "-MTE93Eg02rdWgtY-dxX"
+        },
+        {
+            "name": "repeating_traits_-MTE922Y54ndp4V-urrm_description",
+            "current": "Though you have access to a potent amount of  psionic energy, it takes training and practice to  channel that energy. There is a limit on the  number of psi points you can spend to activate a  psionic discipline. The limit is based on your  mystic level, as shown in the Psi Limit column of  the Mystic table. For example, as a 3rd-level  mystic, you can spend no more than 3 psi points  on a discipline each time you use it, no matter  how many psi points you have.",
+            "max": "",
+            "id": "-MTE97GCmb4EmoYbGc_C"
+        },
+        {
+            "name": "repeating_traits_-MTE922Y54ndp4V-urrm_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTE97GR-00V0FV5T3sh"
+        },
+        {
+            "name": "repeating_traits_-MTE82SXod-wJ3X2wBZr_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MTEA0lZfsM8wdJhIRBf"
+        },
+        {
+            "name": "repeating_traits_-MTE8JMAEIOiiXoNFoIC_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MTEA0yisMbl-OFqimXI"
+        },
+        {
+            "name": "repeating_traits_-MTE8YgV8XPPjj0ltWUE_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MTEA18s_A9ISmra2n5P"
+        },
+        {
+            "name": "repeating_traits_-MTE8g8WQll6dcvsjz9v_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MTEA1GRhPfgSN7DStfx"
+        },
+        {
+            "name": "repeating_traits_-MTE8tvC0nuqj9TP5Fhi_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MTEA1OYtRbiFSRtGCf3"
+        },
+        {
+            "name": "repeating_traits_-MTE922Y54ndp4V-urrm_display_flag",
+            "current": "on",
+            "max": "",
+            "id": "-MTEA1aM1Uah63bNJApK"
+        },
+        {
+            "name": "character_backstory",
+            "current": "Yosys set off from his home in the mountains at the young age of 70 after spending years as, first a tinkerer's apprentice, and later a novice engineer. \n\nOne day as he was assembling a small clockwork rooster he started hearing a voice. For a moment he believed he had created sentient life, but instead the voices were coming from within. The language was incomprehensible and it scared him. He set off in quest to understand what was going on and spent years studying texts that he found in libraries far and wide.\n\nAs he studied the voices grew stronger, but so did he. One day during his studies in a small village a gang of bandits ransacked the town and started burning the buildings. They lit fire to the library he was in and the construction fell down blocking the door. It was at that moment he felt he had unlocked a part of his consciousness that was locked deep down. With immense concentration and a burst of mental energy a wave of emotion blast though the burning pile of rubble allowing him to escape.\n\nYosys is now an middle-aged man of 200 and still in search to understand the voices that invade his consciousness. His searches for more knowledge has lead him to the  town of Saltmarsh.",
+            "max": "",
+            "id": "-MTEBgdE7gOS8Sz1ppT0"
+        },
+        {
+            "name": "repeating_proficiencies_-MTEEwee9bxarCR1K5fx_name",
+            "current": "Elvish",
+            "max": "",
+            "id": "-MTEFqtYe4d25p0F7ne0"
+        },
+        {
+            "name": "repeating_proficiencies_-MTEFrUXxl7RbXNRdRNe_name",
+            "current": "Deep Speech (novice)",
+            "max": "",
+            "id": "-MTEFtfXI5JmDCG3yaHS"
+        },
+        {
+            "name": "repeating_proficiencies_-MTEFrUXxl7RbXNRdRNe_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTEFtfwpZDL23iCQZDF"
+        },
+        {
+            "name": "repeating_proficiencies_-MTEEwee9bxarCR1K5fx_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTEFtsGXcTcxw1Hm-7o"
+        },
+        {
+            "name": "character_appearance",
+            "current": "Birthday: 3/39\n",
+            "max": "",
+            "id": "-MTEJtWhLUbusZzY-oLY"
+        },
+        {
+            "name": "allies_and_organizations",
+            "current": "Astrological Color: Blue",
+            "max": "",
+            "id": "-MTEK4HAbB7nwcuDJH0U"
+        },
+        {
+            "name": "dtype",
+            "current": "full",
+            "max": "",
+            "id": "-MTEP6VuvDrX0_ELLFVY"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spelloutput",
+            "current": "ATTACK",
+            "max": "",
+            "id": "-MTEPWso7oS1yHmjx4du"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellattackid",
+            "current": "-MTEPWvq8xDCyl0ydqYJ",
+            "max": "",
+            "id": "-MTEPWvysnI7VJjNOyBM"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_atkattr_base",
+            "current": "@{intelligence_mod}",
+            "max": "",
+            "id": "-MTEPWw5fVd0GPHcVo79"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-MTEPWw9Hr8YcI0gEqsO"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_spellid",
+            "current": "-mte1pds8k-wz7qbhxce",
+            "max": "",
+            "id": "-MTEPWwD3EmNZhUueo6u"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_spelllevel",
+            "current": "cantrip",
+            "max": "",
+            "id": "-MTEPWwIZ8J3QHSYws23"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_savedc",
+            "current": "(@{intelligence_mod}+8+@{spell_dc_mod}+@{pb})",
+            "max": "",
+            "id": "-MTEPWwNlHrQtR3aKHkk"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_atkname",
+            "current": "Psychic Hammer",
+            "max": "",
+            "id": "-MTEPWwSiE4ISSUxK7pY"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_atkflag",
+            "current": "0",
+            "max": "",
+            "id": "-MTEPWwXIewYlAypeuMI"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_dmgflag",
+            "current": "{{damage=1}} {{dmg1flag=1}}",
+            "max": "",
+            "id": "-MTEPWwbgd-hTIiIrz6n"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_dmgattr",
+            "current": "0",
+            "max": "",
+            "id": "-MTEPWwfXFz9K1fnyjfR"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_dmgtype",
+            "current": "Psychic",
+            "max": "",
+            "id": "-MTEPWwkZ_9YE8EvRtTg"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_dmg2base",
+            "current": "",
+            "max": "",
+            "id": "-MTEPWwpXnrbHab02KC4"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_dmg2attr",
+            "current": "0",
+            "max": "",
+            "id": "-MTEPWwq-GIp4nzJryrD"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_dmg2flag",
+            "current": 0,
+            "max": "",
+            "id": "-MTEPWwt6WDSn-q-v3PP"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_dmg2type",
+            "current": "",
+            "max": "",
+            "id": "-MTEPWwvR_Dwl9dCCTuw"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_atkrange",
+            "current": "120",
+            "max": "",
+            "id": "-MTEPWwxZR4usBX46Rtv"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_saveflag",
+            "current": "{{save=1}} {{saveattr=@{saveattr}}} {{savedesc=@{saveeffect}}} {{savedc=[[[[@{savedc}]][SAVE]]]}}",
+            "max": "",
+            "id": "-MTEPWwzhZchnXMDIGsb"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_saveeffect",
+            "current": "No Damage Or Effect if they save.",
+            "max": "",
+            "id": "-MTEPWx1ws7X6yU4jzd9"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_hldmg",
+            "current": "",
+            "max": "",
+            "id": "-MTEPWx3D6kRRpnWT8hf"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_spell_innate",
+            "current": "",
+            "max": "",
+            "id": "-MTEPWx6zljHr7RFZTqQ"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_atk_desc",
+            "current": "As an action, you try to grasp one creature you  can see within 120 feet of you, with a hand  crafted from telekinetic energy. The target must  succeed on a Strength saving throw or take 1d6  force damage. If it takes any of this damage and is Large or smaller, you can move it up to 10 feet  in a straight line in a direction of your choice.  You can’t lift the target off the ground unless it is  already airborne or underwater.\n\nAt Higher Levels: The talent’s damage increases by 1d6 when  you reach 5th level (2d6), 11th level (3d6), and  17th level (4d6)",
+            "max": "",
+            "id": "-MTEPWx964e69mxuq_s4"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_atkdmgtype",
+            "current": "1d6 Psychic ",
+            "max": "",
+            "id": "-MTEPWyb_IxHfyZ84vt1"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_rollbase_dmg",
+            "current": "@{wtype}&{template:dmg} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d6]]}} {{dmg1type=Psychic}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg} {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+            "max": "",
+            "id": "-MTEPWyf_aJWpAD85Nd7"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_rollbase_crit",
+            "current": "@{wtype}&{template:dmg} {{crit=1}} {{rname=@{atkname}}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d6]]}} {{dmg1type=Psychic}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[1d6]]}} {{crit2=[[0]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} @{charname_output}",
+            "max": "",
+            "id": "-MTEPWyiEQon22B7nYCg"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_atkbonus",
+            "current": "DC13",
+            "max": "",
+            "id": "-MTEPWyprdlz6ZBaBaib"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_rollbase",
+            "current": "@{wtype}&{template:atkdmg} {{mod=@{atkbonus}}} {{rname=@{atkname}}} {{r1=[[0d20cs>@{atkcritrange}]]}} {{r2=[[0d20cs>@{atkcritrange}]]}} @{atkflag} {{range=@{atkrange}}} @{dmgflag} {{dmg1=[[1d6]]}} {{dmg1type=Psychic}} @{dmg2flag} {{dmg2=[[0]]}} {{dmg2type=}} {{crit1=[[1d6[CRIT]]]}} {{crit2=[[0[CRIT]]]}} @{saveflag} {{desc=@{atk_desc}}} @{hldmg}  {{spelllevel=@{spelllevel}}} {{innate=@{spell_innate}}} {{globalattack=@{global_attack_mod}}} {{globaldamage=[[0]]}} {{globaldamagecrit=[[0]]}} {{globaldamagetype=@{global_damage_mod_type}}} ammo=@{ammo} @{charname_output}",
+            "max": "",
+            "id": "-MTEPWz-UJx_i2o59yad"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spelldamage",
+            "current": "1d6",
+            "max": "",
+            "id": "-MTEPZx5N1rL07C8fEml"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_dmgbase",
+            "current": "1d6",
+            "max": "",
+            "id": "-MTEPZzoupZl4Uh-Lv2-"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellsave",
+            "current": "Strength",
+            "max": "",
+            "id": "-MTEPgv5foL-GmNzH5-K"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_saveattr",
+            "current": "Strength",
+            "max": "",
+            "id": "-MTEPgyDQZYnrQLHpd8h"
+        },
+        {
+            "name": "repeating_inventory_-MTDyQdVD2xmhqRKLs6p_inventorysubflag",
+            "current": "0",
+            "max": "",
+            "id": "-MTn61rEb1QKyF2k1T0L"
+        },
+        {
+            "name": "repeating_inventory_-MTDwIH04upIqeh4PsOZ_inventorysubflag",
+            "current": "0",
+            "max": "",
+            "id": "-MTn63jDjqY-YP829Oa8"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spell_ability",
+            "current": "@{intelligence_mod}+",
+            "max": "",
+            "id": "-MTnDqCjD0D1daQ_yi75"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spellsavesuccess",
+            "current": "No Damage Or Effect if they save.",
+            "max": "",
+            "id": "-MTnDwvUChgmAmHUEPQZ"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spelldamagetype",
+            "current": "Psychic",
+            "max": "",
+            "id": "-MTnEJp7zJzjv_Hmh6Dj"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spelldamage2",
+            "current": "",
+            "max": "",
+            "id": "-MTnEJpAB8rnXB5zGeYg"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_spelldamagetype2",
+            "current": "",
+            "max": "",
+            "id": "-MTnEJpD-t8mhpyiH0Zi"
+        },
+        {
+            "name": "repeating_attack_-MTEPWvq8xDCyl0ydqYJ_atkprofflag",
+            "current": "0",
+            "max": "",
+            "id": "-MTnELBzqYkVT394rEwW"
+        },
+        {
+            "name": "repeating_spell-cantrip_-MTE1PdS8k-WZ7qbHxCE_includedesc",
+            "current": "on",
+            "max": "",
+            "id": "-MTnEgLKgSkiXnStOuSb"
+        },
+        {
+            "name": "hero_points",
+            "current": 6,
+            "max": "",
+            "id": "-MW2-Zhrx_9keQ16HB73"
+        },
+        {
+            "name": "queryadvantage",
+            "current": "{{query=1}} ?{Advantage?|Normal Roll,&#123&#123normal=1&#125&#125 &#123&#123r2=[[0d20|Advantage,&#123&#123advantage=1&#125&#125 &#123&#123r2=[[@{d20}|Disadvantage,&#123&#123disadvantage=1&#125&#125 &#123&#123r2=[[@{d20}}",
+            "max": "",
+            "id": "-MXjAjYU1rM17Tg5gqI2"
+        },
+        {
+            "name": "repeating_inventory_-MXjMOZsIf9ZY4Tdztmk_itemname",
+            "current": "Waterskin",
+            "max": "",
+            "id": "-MXjMPt1_cIwEGSPurzz"
+        },
+        {
+            "name": "repeating_inventory_-MYrHikRb7mQRmgC3bn2_itemname",
+            "current": "Music Box",
+            "max": "",
+            "id": "-MYrHk9oPi2F-F6wYNGZ"
+        },
+        {
+            "name": "repeating_inventory_-MYrHikRb7mQRmgC3bn2_inventorysubflag",
+            "current": "0",
+            "max": "",
+            "id": "-MYrHl2lsus7y0N1lWAx"
+        },
+        {
+            "name": "repeating_inventory_-MXjMOZsIf9ZY4Tdztmk_inventorysubflag",
+            "current": "0",
+            "max": "",
+            "id": "-MYrjz0ULmfID2tt5B74"
+        },
+        {
+            "name": "repeating_inventory_-MTDwuCDWacVH7E5wVTI_inventorysubflag",
+            "current": "0",
+            "max": "",
+            "id": "-MYrk0jJfueJm5JJpKv_"
+        },
+        {
+            "name": "repeating_inventory_-MTDx2Zs1W5gDmTi9CJi_inventorysubflag",
+            "current": "0",
+            "max": "",
+            "id": "-MYrk1RK9kTDt5yYAyON"
+        },
+        {
+            "name": "repeating_inventory_-MTDxahEoA70-rMdxrMj_inventorysubflag",
+            "current": "0",
+            "max": "",
+            "id": "-MYrk26DuThbO7QWO1sQ"
+        },
+        {
+            "name": "repeating_inventory_-MTDxp79BLy0STT23dPj_inventorysubflag",
+            "current": "0",
+            "max": "",
+            "id": "-MYrk2bVmgTtV9ICNPJj"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6M6OD2AOQBlXgKKZC_spellname",
+            "current": "Mind Meld",
+            "max": "",
+            "id": "-Ma6M7e7qWIR2MUfD9Q4"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6M6OD2AOQBlXgKKZC_spelldescription",
+            "current": "As a bonus action, you can communicate telepathically with one willing creature you can see within 120 feet of you. The target must have an Intelligence of at least 2, otherwise this talent fails and the action is wasted. This communication can occur until the end of the current turn. You don’t need to share a language with the target for it to understand your telepathic utterances, and it understands you even if it lacks a language. You also gain access to one memory of the target’s choice, gaining perfect recall of one thing it saw or did.",
+            "max": "",
+            "id": "-Ma6MKZgajS1dW83Mtwp"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6M6OD2AOQBlXgKKZC_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6MLA4zO2ggYgclmS2"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6M6OD2AOQBlXgKKZC_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6MLJPKM-poRdK06Gw"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6M6OD2AOQBlXgKKZC_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6MLUF8EfzRwCmtjkC"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6M6OD2AOQBlXgKKZC_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6MM04cl3VQVGmHQau"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6ViBSPZtfrLiF95sb_spellname",
+            "current": "Nomadic\tStep - Psychic Focus",
+            "max": "",
+            "id": "-Ma6VjDSfGjBCWGjE6_w"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6ViBSPZtfrLiF95sb_spelldescription",
+            "current": "After you teleport on your turn while focused on this discipline, your walking speed increases by 10 feet until the end of the turn, as you are propelled by the magic of your teleportation. You can receive this increase only once per turn",
+            "max": "",
+            "id": "-Ma6VtUIkQ4D_9f-l_4-"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6ViBSPZtfrLiF95sb_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6VwVjpdV0SNKkZ9KR"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6ViBSPZtfrLiF95sb_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6VwfP7WeFfmId9f2c"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6ViBSPZtfrLiF95sb_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6VwoAX7yZ1s84e4LT"
+        },
+        {
+            "name": "repeating_spell-cantrip_-Ma6ViBSPZtfrLiF95sb_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6Vz0IN8STF3KjqjDp"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6W71jdIfnTeLP4fpD_spelldescription",
+            "current": "If you haven’t moved yet on your turn, you take a bonus action to teleport up to 20 feet per psi point spent to an unoccupied space you can see, and your speed is reduced to 0 until the end of the turn.",
+            "max": "",
+            "id": "-Ma6W8bmpMpXzni0tIyI"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6W71jdIfnTeLP4fpD_spellname",
+            "current": "Step of a Dozen Paces (1–7 psi).",
+            "max": "",
+            "id": "-Ma6W935qP4pj-vaLwqL"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6W71jdIfnTeLP4fpD_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6W9fKu9VJRZRfmha-"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6W71jdIfnTeLP4fpD_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6W9qAzyTaPH0UGtDw"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6W71jdIfnTeLP4fpD_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6W9z2ObhwzcqH-bIy"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6W71jdIfnTeLP4fpD_spellrange",
+            "current": "20ft/psi",
+            "max": "",
+            "id": "-Ma6WCEvogAyTMznjW5F"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6W71jdIfnTeLP4fpD_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WD9BUWfLyTLHCDrZ"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WHyv1YBZtqvJdxDl_spelldescription",
+            "current": "When you are hit by an attack, you can use your reaction to gain a +4 bonus to AC against that attack, possibly turning it into a miss. You then teleport up to 10 feet to an unoccupied space you can see.",
+            "max": "",
+            "id": "-Ma6WM-fNibwXxw6oNhQ"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WHyv1YBZtqvJdxDl_spellname",
+            "current": "Defensive Step (2 psi)",
+            "max": "",
+            "id": "-Ma6WMCk0g8WDKAyH0z3"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WHyv1YBZtqvJdxDl_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WNk5_BdGVjktbMiH"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WHyv1YBZtqvJdxDl_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WNrRjaGB0HifouF5"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WHyv1YBZtqvJdxDl_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WO-YIAvlkhXumQB4"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WHyv1YBZtqvJdxDl_spellrange",
+            "current": "120",
+            "max": "",
+            "id": "-Ma6WSI8J-D8SYqN7Uj_"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WHyv1YBZtqvJdxDl_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WUedaJA9i0xSZI4k"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WWgDdFzzIRI2OYgl_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WXZ1p1nRvdD3vLlf"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6WZp1lAJgY436CXKB_spelldescription",
+            "current": "As an action, you create an invisible, intangible teleportation anchor in a 5-foot cube you can see within 120 feet of you. For the next 8 hours, whenever you use this psionic discipline to teleport, you can instead teleport to the anchor, even if you can’t see it, but it must be within range of the teleportation ability.",
+            "max": "",
+            "id": "-Ma6Wawn_p_gt1m2AHCj"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6WZp1lAJgY436CXKB_spellname",
+            "current": "Nomadic Anchor (1 psi)",
+            "max": "",
+            "id": "-Ma6WcXe_sDoJymNW2FF"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6WZp1lAJgY436CXKB_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WcYzHtbz70oh3g34"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6WZp1lAJgY436CXKB_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WcnGmAUNTdxZalDv"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6WZp1lAJgY436CXKB_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WcxUyAQ0awt7MsEy"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6WZp1lAJgY436CXKB_spellrange",
+            "current": "120",
+            "max": "",
+            "id": "-Ma6WgUZbyZ19HfHe8_W"
+        },
+        {
+            "name": "repeating_spell-1_-Ma6WZp1lAJgY436CXKB_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6WgUqnNkvF3w2i-ae"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WWgDdFzzIRI2OYgl_spelldescription",
+            "current": "As a bonus action, you teleport up to 20 feet to an unoccupied space you can see and then move up to half your speed. At the end of your turn, you can teleport back to the spot you occupied before teleporting, unless it is now occupied or on a different plane of existence.",
+            "max": "",
+            "id": "-Ma6X274zOV_YvGexQTV"
+        },
+        {
+            "name": "repeating_spell-2_-Ma6WWgDdFzzIRI2OYgl_spellname",
+            "current": "There and Back Again (2 psi)",
+            "max": "",
+            "id": "-Ma6X2X17JXDh0wl0UK1"
+        },
+        {
+            "name": "repeating_spell-3_-Ma6X9FvFIpVDZfnk2g8_spelldescription",
+            "current": "If you haven’t moved yet on your turn, choose an ally you can see within 60 feet of you. As a bonus action, you and that creature teleport, swapping places, and your speed is reduced to 0 until the end of the turn. This ability fails and is wasted if either of you can’t fit in the destination space.",
+            "max": "",
+            "id": "-Ma6XAT67jAIxVDBwi_w"
+        },
+        {
+            "name": "repeating_spell-3_-Ma6X9FvFIpVDZfnk2g8_spellname",
+            "current": "Transposition (3 psi)",
+            "max": "",
+            "id": "-Ma6XC-Xib6Xxyofs4tJ"
+        },
+        {
+            "name": "repeating_spell-3_-Ma6X9FvFIpVDZfnk2g8_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XCgkPj3tPgYUum93"
+        },
+        {
+            "name": "repeating_spell-3_-Ma6X9FvFIpVDZfnk2g8_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XCvfZUHS0rX_wd1g"
+        },
+        {
+            "name": "repeating_spell-3_-Ma6X9FvFIpVDZfnk2g8_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XD3m6htYoXFMYukx"
+        },
+        {
+            "name": "repeating_spell-3_-Ma6X9FvFIpVDZfnk2g8_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XDrTr0GmgnrGJ1A9"
+        },
+        {
+            "name": "repeating_spell-5_-Ma6XMg1mBcVyvEAySkw_spelldescription",
+            "current": "As an action, choose one creature you can see within 120 feet of you. That creature must make a Wisdom saving throw. On a failed save, you and that creature teleport, swapping places. This ability fails and is wasted if either of you can’t fit in the destination space.",
+            "max": "",
+            "id": "-Ma6XNy6Opr5hjJ5dxpH"
+        },
+        {
+            "name": "repeating_spell-5_-Ma6XMg1mBcVyvEAySkw_spellname",
+            "current": "Baleful Transposition (5 psi)",
+            "max": "",
+            "id": "-Ma6XP8qjQ_JSa93t_Hg"
+        },
+        {
+            "name": "repeating_spell-5_-Ma6XMg1mBcVyvEAySkw_spellrange",
+            "current": "120",
+            "max": "",
+            "id": "-Ma6XPR3-UZ2B9s55vUG"
+        },
+        {
+            "name": "repeating_spell-5_-Ma6XMg1mBcVyvEAySkw_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XPSSPtnJX4EU6_3G"
+        },
+        {
+            "name": "repeating_spell-5_-Ma6XMg1mBcVyvEAySkw_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XPtZdhFRVbgOIYb8"
+        },
+        {
+            "name": "repeating_spell-5_-Ma6XMg1mBcVyvEAySkw_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XQ1eQrDDhC64l925"
+        },
+        {
+            "name": "repeating_spell-5_-Ma6XMg1mBcVyvEAySkw_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XQJXJHKtMuzD2VPv"
+        },
+        {
+            "name": "repeating_spell-6_-Ma6XU7kfTx1uJxpinym_spelldescription",
+            "current": "As an action, you and up to six willing creatures of your choice that you can see within 60 feet of you teleport up to 1 mile to a spot you can see. If there isn’t an open space for all the targets to occupy at the arrival point, this ability fails and is wasted.",
+            "max": "",
+            "id": "-Ma6XVMOC_-QZU5Z7eCz"
+        },
+        {
+            "name": "repeating_spell-6_-Ma6XU7kfTx1uJxpinym_spellname",
+            "current": "Phantom Caravan (6 psi)",
+            "max": "",
+            "id": "-Ma6XWILBXooROZJLSOg"
+        },
+        {
+            "name": "repeating_spell-6_-Ma6XU7kfTx1uJxpinym_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XWQODh94d0dFC1MM"
+        },
+        {
+            "name": "repeating_spell-6_-Ma6XU7kfTx1uJxpinym_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XWfXeqYVvE8U51An"
+        },
+        {
+            "name": "repeating_spell-6_-Ma6XU7kfTx1uJxpinym_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XWmXZCYKCrvt8kIi"
+        },
+        {
+            "name": "repeating_spell-6_-Ma6XU7kfTx1uJxpinym_spelltarget",
+            "current": "60",
+            "max": "",
+            "id": "-Ma6XXdlN_AVhm1Xb-Mj"
+        },
+        {
+            "name": "repeating_spell-6_-Ma6XU7kfTx1uJxpinym_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XXfUrwAZL-MY8QDI"
+        },
+        {
+            "name": "repeating_spell-7_-Ma6XaSXJz8e4HuMLYdU_spelldescription",
+            "current": "As an action, you create a 5-foot cube of dim, gray light within 5 feet of you. You create an identical cube at any point of your choice within 1 mile that you have viewed within the past 24 hours. Until your concentration ends, anyone entering one of the cubes immediately teleports to the other one, appearing in an unoccupied space next to it. The teleportation fails if there is no space for the creature to appear in.",
+            "max": "",
+            "id": "-Ma6XdEx-MoJNNB4SgF6"
+        },
+        {
+            "name": "repeating_spell-7_-Ma6XaSXJz8e4HuMLYdU_spellname",
+            "current": "Nomad’s Gate (7 psi; conc., 1 hr.).",
+            "max": "",
+            "id": "-Ma6Xdgw3SeCRIMr7q8w"
+        },
+        {
+            "name": "repeating_spell-7_-Ma6XaSXJz8e4HuMLYdU_spellconcentration",
+            "current": "{{concentration=1}}",
+            "max": "",
+            "id": "-Ma6XdjoSVQVdIF4PZUc"
+        },
+        {
+            "name": "repeating_spell-7_-Ma6XaSXJz8e4HuMLYdU_spellcomp_v",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6Xe5VkKlOoULYb_xI"
+        },
+        {
+            "name": "repeating_spell-7_-Ma6XaSXJz8e4HuMLYdU_spellcomp_s",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XeD-i7W5Z3M4OoQo"
+        },
+        {
+            "name": "repeating_spell-7_-Ma6XaSXJz8e4HuMLYdU_spellcomp_m",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XeK2Ck6t9h1SFgIh"
+        },
+        {
+            "name": "repeating_spell-7_-Ma6XaSXJz8e4HuMLYdU_options-flag",
+            "current": "0",
+            "max": "",
+            "id": "-Ma6XfKydHl1GOQTBC-Y"
+        }
+    ],
+    "abilities": []
+}
